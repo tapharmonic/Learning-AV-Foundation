@@ -17,8 +17,7 @@
 		C44111B018163B8D005C0699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44111AF18163B8D005C0699 /* Images.xcassets */; };
 		C44111CE18163BAF005C0699 /* THSpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44111CD18163BAF005C0699 /* THSpeechController.m */; };
 		C44111D118163D79005C0699 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44111D018163D79005C0699 /* THViewController.m */; };
-		C4B3320C18EFA6990071417C /* THRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B3320918EFA6990071417C /* THRightBubbleCell.m */; };
-		C4B3320D18EFA6990071417C /* THLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B3320B18EFA6990071417C /* THLeftBubbleCell.m */; };
+		C4D343A918F0DCA600AAE00B /* THBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D343A818F0DCA600AAE00B /* THBubbleCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +38,8 @@
 		C44111CD18163BAF005C0699 /* THSpeechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSpeechController.m; sourceTree = "<group>"; };
 		C44111CF18163D79005C0699 /* THViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
 		C44111D018163D79005C0699 /* THViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
-		C4B3320818EFA6990071417C /* THRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRightBubbleCell.h; sourceTree = "<group>"; };
-		C4B3320918EFA6990071417C /* THRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRightBubbleCell.m; sourceTree = "<group>"; };
-		C4B3320A18EFA6990071417C /* THLeftBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLeftBubbleCell.h; sourceTree = "<group>"; };
-		C4B3320B18EFA6990071417C /* THLeftBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLeftBubbleCell.m; sourceTree = "<group>"; };
+		C4D343A718F0DCA600AAE00B /* THBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBubbleCell.h; sourceTree = "<group>"; };
+		C4D343A818F0DCA600AAE00B /* THBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBubbleCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +87,10 @@
 		C441119D18163B8D005C0699 /* Hello AV Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				C4D343A718F0DCA600AAE00B /* THBubbleCell.h */,
+				C4D343A818F0DCA600AAE00B /* THBubbleCell.m */,
 				C44111A618163B8D005C0699 /* THAppDelegate.h */,
 				C44111A718163B8D005C0699 /* THAppDelegate.m */,
-				C4B3320A18EFA6990071417C /* THLeftBubbleCell.h */,
-				C4B3320B18EFA6990071417C /* THLeftBubbleCell.m */,
-				C4B3320818EFA6990071417C /* THRightBubbleCell.h */,
-				C4B3320918EFA6990071417C /* THRightBubbleCell.m */,
 				C44111CC18163BAF005C0699 /* THSpeechController.h */,
 				C44111CD18163BAF005C0699 /* THSpeechController.m */,
 				C44111CF18163D79005C0699 /* THViewController.h */,
@@ -185,10 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44111D118163D79005C0699 /* THViewController.m in Sources */,
+				C4D343A918F0DCA600AAE00B /* THBubbleCell.m in Sources */,
 				C44111A818163B8D005C0699 /* THAppDelegate.m in Sources */,
 				C44111A418163B8D005C0699 /* main.m in Sources */,
-				C4B3320C18EFA6990071417C /* THRightBubbleCell.m in Sources */,
-				C4B3320D18EFA6990071417C /* THLeftBubbleCell.m in Sources */,
 				C44111CE18163BAF005C0699 /* THSpeechController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

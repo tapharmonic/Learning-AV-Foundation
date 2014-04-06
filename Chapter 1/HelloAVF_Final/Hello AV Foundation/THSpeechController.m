@@ -52,10 +52,10 @@
 }
 
 - (NSArray *)buildSpeechStrings {
-    return @[@"Hello AV Foundation.  How are you?",
-             @"I'm well!  Thanks for asking.",
+    return @[@"Hello AV Foundation. How are you?",
+             @"I'm well! Thanks for asking.",
              @"Are you excited about the book?",
-             @"Very! I have always felt so misundertood",
+             @"Very! I have always felt so misunderstood.",
              @"What's your favorite feature?",
              @"Oh, they're all my babies.  I couldn't possibly choose.",
              @"It was great to speak with you!",
@@ -63,10 +63,6 @@
 }
 
 - (void)beginConversation {
-    NSLog(@"Min: %f", AVSpeechUtteranceMinimumSpeechRate);
-    NSLog(@"Default: %f", AVSpeechUtteranceDefaultSpeechRate);
-    NSLog(@"Max: %f", AVSpeechUtteranceMaximumSpeechRate);
-
     for (NSUInteger i = 0; i < self.speechStrings.count; i++) {
         AVSpeechUtterance *utterance =
             [[AVSpeechUtterance alloc] initWithString:self.speechStrings[i]];

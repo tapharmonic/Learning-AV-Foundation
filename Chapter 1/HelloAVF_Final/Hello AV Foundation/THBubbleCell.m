@@ -23,12 +23,8 @@
 //  THE SOFTWARE.
 //
 
-#import "THAppDelegate.h"
+#import "THBubbleCell.h"
 
-@implementation THAppDelegate
+@implementation THBubbleCell
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    return YES;
-}
-							
 @end

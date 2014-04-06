@@ -23,12 +23,8 @@
 //  THE SOFTWARE.
 //
 
-#import "THAppDelegate.h"
+@interface THBubbleCell : UITableViewCell
 
-@implementation THAppDelegate
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    return YES;
-}
-							
 @end

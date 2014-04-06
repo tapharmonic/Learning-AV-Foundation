@@ -26,8 +26,7 @@
 #import "THViewController.h"
 #import "THSpeechController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "THLeftBubbleCell.h"
-#import "THRightBubbleCell.h"
+#import "THBubbleCell.h"
 
 @interface THViewController () <AVSpeechSynthesizerDelegate>
 @property (strong, nonatomic) THSpeechController *speechController;
@@ -52,8 +51,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = indexPath.row % 2 == 0 ? @"YouCell" : @"AVFCell";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    [[(id)cell messageLabel] setText:self.speechStrings[indexPath.row]];
+    THBubbleCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    cell.messageLabel.text = self.speechStrings[indexPath.row];
     return cell;
 }
 
