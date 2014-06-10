@@ -103,11 +103,12 @@
 
 - (void)startTimer {
     [self.timer invalidate];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
-                                                  target:self
-                                                selector:@selector(updateTimeDisplay)
-                                                userInfo:nil
-                                                 repeats:YES];
+    self.timer = [NSTimer timerWithTimeInterval:0.5
+                                         target:self
+                                       selector:@selector(updateTimeDisplay)
+                                       userInfo:nil
+                                        repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)updateTimeDisplay {
@@ -214,7 +215,7 @@
                                                   selector:@selector(updateMeter)];
     self.levelTimer.frameInterval = 5;
     [self.levelTimer addToRunLoop:[NSRunLoop currentRunLoop]
-                          forMode:NSDefaultRunLoopMode];
+                          forMode:NSRunLoopCommonModes];
 }
 
 - (void)stopMeterTimer {
