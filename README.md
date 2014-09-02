@@ -2,5 +2,10 @@
 
 ![Book Cover](https://raw.github.com/tapharmonic/Learning-AV-Foundation/master/book.jpg)
 
-Sample code for Bob McCune's Learning AV Foundation book. The book is currently available in Rough Cut form on <a href="http://my.safaribooksonline.com/book/web-applications-and-services/9780133563856">Safari Books Online</a>.
+Sample code for Bob McCune's Learning AV Foundation book. The book is now available for pre-order from  <a href="http://www.informit.com/store/learning-av-foundation-a-hands-on-guide-to-mastering-9780321961808">InformIT</a>. Use MCCUNE1808 for a 30% discount!
+
+You can find a more detailed overview of the book contents at Bob McCune's website: <a href="http://www.bobmccune.com/2014/08/25/learning-av-foundation-is-now-available-for-pre-order/">http://bobmccune.com/</a>.
+
+Over the next couple months the complete set of sample projects, and there's a lot of them, will be posted. Stay tuned!
+
 
