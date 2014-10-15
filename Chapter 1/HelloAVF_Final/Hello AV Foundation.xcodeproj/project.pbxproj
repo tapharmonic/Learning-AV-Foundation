@@ -89,15 +89,15 @@
 			children = (
 				C44111A618163B8D005C0699 /* THAppDelegate.h */,
 				C44111A718163B8D005C0699 /* THAppDelegate.m */,
-				C44111A918163B8D005C0699 /* Main.storyboard */,
-				C44111AF18163B8D005C0699 /* Images.xcassets */,
-				C441119E18163B8D005C0699 /* Supporting Files */,
+				C488BD9A18EF990800C3A6C0 /* THBubbleCell.h */,
+				C488BD9B18EF990800C3A6C0 /* THBubbleCell.m */,
 				C44111CC18163BAF005C0699 /* THSpeechController.h */,
 				C44111CD18163BAF005C0699 /* THSpeechController.m */,
 				C44111CF18163D79005C0699 /* THViewController.h */,
 				C44111D018163D79005C0699 /* THViewController.m */,
-				C488BD9A18EF990800C3A6C0 /* THBubbleCell.h */,
-				C488BD9B18EF990800C3A6C0 /* THBubbleCell.m */,
+				C44111AF18163B8D005C0699 /* Images.xcassets */,
+				C44111A918163B8D005C0699 /* Main.storyboard */,
+				C441119E18163B8D005C0699 /* Supporting Files */,
 			);
 			path = "Hello AV Foundation";
 			sourceTree = "<group>";

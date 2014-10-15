@@ -87,10 +87,10 @@
 		C441119D18163B8D005C0699 /* Hello AV Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C4D343A718F0DCA600AAE00B /* THBubbleCell.h */,
-				C4D343A818F0DCA600AAE00B /* THBubbleCell.m */,
 				C44111A618163B8D005C0699 /* THAppDelegate.h */,
 				C44111A718163B8D005C0699 /* THAppDelegate.m */,
+				C4D343A718F0DCA600AAE00B /* THBubbleCell.h */,
+				C4D343A818F0DCA600AAE00B /* THBubbleCell.m */,
 				C44111CC18163BAF005C0699 /* THSpeechController.h */,
 				C44111CD18163BAF005C0699 /* THSpeechController.m */,
 				C44111CF18163D79005C0699 /* THViewController.h */,
