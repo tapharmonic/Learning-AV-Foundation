@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'MetaManager' target in the 'MetaManager' project
+//
+
+#ifdef __OBJC__
+
+#import <Cocoa/Cocoa.h>
+
+#endif
