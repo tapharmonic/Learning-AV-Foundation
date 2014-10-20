@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C434F582197B715A0076B46B /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C434F580197B715A0076B46B /* beat.aiff */; };
+		C434F583197B715A0076B46B /* keys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C434F581197B715A0076B46B /* keys.mp3 */; };
+		C49539531974DBA60031ABF5 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C49539521974DBA60031ABF5 /* UIColor+THAdditions.m */; };
+		C499654C1974D1360070C06D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499654B1974D1360070C06D /* Foundation.framework */; };
+		C499654E1974D1360070C06D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499654D1974D1360070C06D /* CoreGraphics.framework */; };
+		C49965501974D1360070C06D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499654F1974D1360070C06D /* UIKit.framework */; };
+		C49965561974D1360070C06D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C49965541974D1360070C06D /* InfoPlist.strings */; };
+		C49965581974D1360070C06D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C49965571974D1360070C06D /* main.m */; };
+		C499655C1974D1360070C06D /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C499655B1974D1360070C06D /* THAppDelegate.m */; };
+		C499655F1974D1360070C06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C499655D1974D1360070C06D /* Main.storyboard */; };
+		C49965621974D1360070C06D /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49965611974D1360070C06D /* THViewController.m */; };
+		C49965641974D1360070C06D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49965631974D1360070C06D /* Images.xcassets */; };
+		C49965861974D1C00070C06D /* THSampleDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C49965811974D1C00070C06D /* THSampleDataFilter.m */; };
+		C49965871974D1C00070C06D /* THSampleDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C49965831974D1C00070C06D /* THSampleDataProvider.m */; };
+		C49965881974D1C00070C06D /* THWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49965851974D1C00070C06D /* THWaveformView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C434F580197B715A0076B46B /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
+		C434F581197B715A0076B46B /* keys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = keys.mp3; sourceTree = "<group>"; };
+		C49539511974DBA60031ABF5 /* UIColor+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+THAdditions.h"; sourceTree = "<group>"; };
+		C49539521974DBA60031ABF5 /* UIColor+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+THAdditions.m"; sourceTree = "<group>"; };
+		C49965481974D1360070C06D /* THWaveformView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THWaveformView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C499654B1974D1360070C06D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C499654D1974D1360070C06D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C499654F1974D1360070C06D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C49965531974D1360070C06D /* THWaveformView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THWaveformView-Info.plist"; sourceTree = "<group>"; };
+		C49965551974D1360070C06D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C49965571974D1360070C06D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C49965591974D1360070C06D /* THWaveformView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THWaveformView-Prefix.pch"; sourceTree = "<group>"; };
+		C499655A1974D1360070C06D /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		C499655B1974D1360070C06D /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		C499655E1974D1360070C06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C49965601974D1360070C06D /* THViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
+		C49965611974D1360070C06D /* THViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
+		C49965631974D1360070C06D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C499656A1974D1360070C06D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C49965801974D1C00070C06D /* THSampleDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSampleDataFilter.h; sourceTree = "<group>"; };
+		C49965811974D1C00070C06D /* THSampleDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSampleDataFilter.m; sourceTree = "<group>"; };
+		C49965821974D1C00070C06D /* THSampleDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSampleDataProvider.h; sourceTree = "<group>"; };
+		C49965831974D1C00070C06D /* THSampleDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSampleDataProvider.m; sourceTree = "<group>"; };
+		C49965841974D1C00070C06D /* THWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THWaveformView.h; sourceTree = "<group>"; };
+		C49965851974D1C00070C06D /* THWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THWaveformView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C49965451974D1360070C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C499654E1974D1360070C06D /* CoreGraphics.framework in Frameworks */,
+				C49965501974D1360070C06D /* UIKit.framework in Frameworks */,
+				C499654C1974D1360070C06D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C499653F1974D1360070C06D = {
+			isa = PBXGroup;
+			children = (
+				C49965511974D1360070C06D /* THWaveformView */,
+				C499654A1974D1360070C06D /* Frameworks */,
+				C49965491974D1360070C06D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C49965491974D1360070C06D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C49965481974D1360070C06D /* THWaveformView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C499654A1974D1360070C06D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C499654B1974D1360070C06D /* Foundation.framework */,
+				C499654D1974D1360070C06D /* CoreGraphics.framework */,
+				C499654F1974D1360070C06D /* UIKit.framework */,
+				C499656A1974D1360070C06D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C49965511974D1360070C06D /* THWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				C49965891974D1C70070C06D /* THWaveformView */,
+				C499655A1974D1360070C06D /* THAppDelegate.h */,
+				C499655B1974D1360070C06D /* THAppDelegate.m */,
+				C499655D1974D1360070C06D /* Main.storyboard */,
+				C49965601974D1360070C06D /* THViewController.h */,
+				C49965611974D1360070C06D /* THViewController.m */,
+				C49965631974D1360070C06D /* Images.xcassets */,
+				C49965521974D1360070C06D /* Supporting Files */,
+			);
+			path = THWaveformView;
+			sourceTree = "<group>";
+		};
+		C49965521974D1360070C06D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C434F580197B715A0076B46B /* beat.aiff */,
+				C434F581197B715A0076B46B /* keys.mp3 */,
+				C49965531974D1360070C06D /* THWaveformView-Info.plist */,
+				C49965541974D1360070C06D /* InfoPlist.strings */,
+				C49965571974D1360070C06D /* main.m */,
+				C49965591974D1360070C06D /* THWaveformView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C49965891974D1C70070C06D /* THWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				C49965841974D1C00070C06D /* THWaveformView.h */,
+				C49965851974D1C00070C06D /* THWaveformView.m */,
+				C49965801974D1C00070C06D /* THSampleDataFilter.h */,
+				C49965811974D1C00070C06D /* THSampleDataFilter.m */,
+				C49965821974D1C00070C06D /* THSampleDataProvider.h */,
+				C49965831974D1C00070C06D /* THSampleDataProvider.m */,
+				C49539511974DBA60031ABF5 /* UIColor+THAdditions.h */,
+				C49539521974DBA60031ABF5 /* UIColor+THAdditions.m */,
+			);
+			name = THWaveformView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C49965471974D1360070C06D /* THWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C499657A1974D1360070C06D /* Build configuration list for PBXNativeTarget "THWaveformView" */;
+			buildPhases = (
+				C49965441974D1360070C06D /* Sources */,
+				C49965451974D1360070C06D /* Frameworks */,
+				C49965461974D1360070C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THWaveformView;
+			productName = THWaveformView;
+			productReference = C49965481974D1360070C06D /* THWaveformView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C49965401974D1360070C06D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "TapHarmonic, LLC";
+				TargetAttributes = {
+					C49965471974D1360070C06D = {
+						DevelopmentTeam = GV36U76CUM;
+					};
+				};
+			};
+			buildConfigurationList = C49965431974D1360070C06D /* Build configuration list for PBXProject "THWaveformView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C499653F1974D1360070C06D;
+			productRefGroup = C49965491974D1360070C06D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C49965471974D1360070C06D /* THWaveformView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C49965461974D1360070C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49965641974D1360070C06D /* Images.xcassets in Resources */,
+				C49965561974D1360070C06D /* InfoPlist.strings in Resources */,
+				C434F583197B715A0076B46B /* keys.mp3 in Resources */,
+				C434F582197B715A0076B46B /* beat.aiff in Resources */,
+				C499655F1974D1360070C06D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C49965441974D1360070C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49965621974D1360070C06D /* THViewController.m in Sources */,
+				C49965881974D1C00070C06D /* THWaveformView.m in Sources */,
+				C49539531974DBA60031ABF5 /* UIColor+THAdditions.m in Sources */,
+				C49965861974D1C00070C06D /* THSampleDataFilter.m in Sources */,
+				C49965871974D1C00070C06D /* THSampleDataProvider.m in Sources */,
+				C499655C1974D1360070C06D /* THAppDelegate.m in Sources */,
+				C49965581974D1360070C06D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C49965541974D1360070C06D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C49965551974D1360070C06D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C499655D1974D1360070C06D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C499655E1974D1360070C06D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C49965781974D1360070C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C49965791974D1360070C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C499657B1974D1360070C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THWaveformView/THWaveformView-Prefix.pch";
+				INFOPLIST_FILE = "THWaveformView/THWaveformView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C499657C1974D1360070C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THWaveformView/THWaveformView-Prefix.pch";
+				INFOPLIST_FILE = "THWaveformView/THWaveformView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C49965431974D1360070C06D /* Build configuration list for PBXProject "THWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49965781974D1360070C06D /* Debug */,
+				C49965791974D1360070C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C499657A1974D1360070C06D /* Build configuration list for PBXNativeTarget "THWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C499657B1974D1360070C06D /* Debug */,
+				C499657C1974D1360070C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C49965401974D1360070C06D /* Project object */;
+}

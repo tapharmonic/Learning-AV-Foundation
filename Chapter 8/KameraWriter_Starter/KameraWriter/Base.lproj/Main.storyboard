@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="THViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aN4-e2-DZ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqN-kC-fVa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="THCameraView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-C1-yGF" customClass="THPreviewView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laS-Jl-RZ1" customClass="THOverlayView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18I-er-Pkx">
+                                        <rect key="frame" x="0.0" y="472" width="320" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79M-kt-Zrg" customClass="THCaptureButton">
+                                                <rect key="frame" x="126" y="14" width="68" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="captureOrRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vor-2a-Nie"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="0Xp-U6-yvV"/>
+                                            <constraint firstAttribute="height" constant="96" id="i5H-qT-C51"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wn-o9-tZQ" customClass="THFilterSelectorView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQO-Z4-Ot1">
+                                                <rect key="frame" x="20" y="4" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="left_arrow">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEF-Jv-QSm">
+                                                <rect key="frame" x="260" y="4" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="right_arrow">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-6s-rFp">
+                                                <rect key="frame" x="70" y="0.0" width="180" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="leftButton" destination="dQO-Z4-Ot1" id="5uB-C7-xTp"/>
+                                            <outlet property="rightButton" destination="KEF-Jv-QSm" id="WwI-uj-1de"/>
+                                            <outlet property="scrollView" destination="RI9-6s-rFp" id="9No-aF-FtZ"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="18I-er-Pkx" firstAttribute="leading" secondItem="laS-Jl-RZ1" secondAttribute="leading" id="rWq-hF-M08"/>
+                                    <constraint firstAttribute="bottom" secondItem="18I-er-Pkx" secondAttribute="bottom" id="y99-IQ-f3a"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="filterSelectorView" destination="7wn-o9-tZQ" id="yZu-Zv-mhd"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="laS-Jl-RZ1" secondAttribute="centerX" id="1Mt-pD-AlS"/>
+                            <constraint firstAttribute="centerY" secondItem="laS-Jl-RZ1" secondAttribute="centerY" id="PgS-LU-9Yl"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WIQ-r8-24J"/>
+                            <constraint firstItem="xqN-kC-fVa" firstAttribute="top" secondItem="laS-Jl-RZ1" secondAttribute="bottom" id="oNO-Wb-1X5"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="top" secondItem="aN4-e2-DZ2" secondAttribute="bottom" id="rCF-9A-1xw"/>
+                            <constraint firstAttribute="trailing" secondItem="laS-Jl-RZ1" secondAttribute="trailing" id="sbj-hT-pRm"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="controlsView" destination="laS-Jl-RZ1" id="Hsy-wM-HtI"/>
+                            <outlet property="previewView" destination="L7h-C1-yGF" id="jL3-Li-xpw"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="overlayView" destination="laS-Jl-RZ1" id="cOP-13-gEN"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="nz1-Hz-Hhe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left_arrow" width="20" height="25"/>
+        <image name="right_arrow" width="20" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
