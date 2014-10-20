@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0747413918A143AC0060A1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747413818A143AC0060A1F6 /* Foundation.framework */; };
+		0747413B18A143AC0060A1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747413A18A143AC0060A1F6 /* CoreGraphics.framework */; };
+		0747413D18A143AC0060A1F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747413C18A143AC0060A1F6 /* UIKit.framework */; };
+		0747414318A143AC0060A1F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0747414118A143AC0060A1F6 /* InfoPlist.strings */; };
+		0747414518A143AC0060A1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747414418A143AC0060A1F6 /* main.m */; };
+		0747414918A143AC0060A1F6 /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747414818A143AC0060A1F6 /* THAppDelegate.m */; };
+		0747414C18A143AC0060A1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0747414A18A143AC0060A1F6 /* Main.storyboard */; };
+		0747415118A143AC0060A1F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0747415018A143AC0060A1F6 /* Images.xcassets */; };
+		C40A184C18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A184B18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.m */; };
+		C40A184F18A6FF8D00F19DF6 /* THError.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A184E18A6FF8D00F19DF6 /* THError.m */; };
+		C40A185418A70DFC00F19DF6 /* THPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A185118A70DFC00F19DF6 /* THPlayerController.m */; };
+		C40A185518A70DFC00F19DF6 /* THPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A185318A70DFC00F19DF6 /* THPlayerViewController.m */; };
+		C40A185B18A70EA500F19DF6 /* THPlayerOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A185718A70EA500F19DF6 /* THPlayerOverlayView.m */; };
+		C40A185C18A70EA500F19DF6 /* THPlayerOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A185818A70EA500F19DF6 /* THPlayerOverlayView.xib */; };
+		C40A185D18A70EA500F19DF6 /* THPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A185A18A70EA500F19DF6 /* THPlayerView.m */; };
+		C42C26FF18A2038800A03713 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C26F918A2038800A03713 /* THViewController.m */; };
+		C42C270018A2038800A03713 /* THCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C26FB18A2038800A03713 /* THCameraController.m */; };
+		C42C270118A2038800A03713 /* THBaseCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C26FD18A2038800A03713 /* THBaseCameraController.m */; };
+		C42C271118A203C200A03713 /* THCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C270518A203C200A03713 /* THCaptureButton.m */; };
+		C42C271418A203C200A03713 /* THPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C270B18A203C200A03713 /* THPreviewView.m */; };
+		C42C271518A203C200A03713 /* THCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C270D18A203C200A03713 /* THCameraView.m */; };
+		C42C271D18A203D000A03713 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C271818A203D000A03713 /* NSFileManager+THAdditions.m */; };
+		C42C271F18A203D000A03713 /* UIView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C271C18A203D000A03713 /* UIView+THAdditions.m */; };
+		C42C272318A20B3500A03713 /* THAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C42C272218A20B3500A03713 /* THAssetsLibrary.m */; };
+		C4B92AFC18A9A035000DCE44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B92AFB18A9A035000DCE44 /* AVFoundation.framework */; };
+		C4B92AFE18A9A03B000DCE44 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B92AFD18A9A03B000DCE44 /* CoreMedia.framework */; };
+		C4B92B0118A9AAC0000DCE44 /* UIAlertView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B92B0018A9AAC0000DCE44 /* UIAlertView+THAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0747413518A143AC0060A1F6 /* SlowKamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowKamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0747413818A143AC0060A1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0747413A18A143AC0060A1F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0747413C18A143AC0060A1F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0747414018A143AC0060A1F6 /* SlowKamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlowKamera-Info.plist"; sourceTree = "<group>"; };
+		0747414218A143AC0060A1F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0747414418A143AC0060A1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0747414618A143AC0060A1F6 /* SlowKamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlowKamera-Prefix.pch"; sourceTree = "<group>"; };
+		0747414718A143AC0060A1F6 /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		0747414818A143AC0060A1F6 /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		0747414B18A143AC0060A1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0747415018A143AC0060A1F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0747415718A143AC0060A1F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C40A184A18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+THAdditions.h"; sourceTree = "<group>"; };
+		C40A184B18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+THAdditions.m"; sourceTree = "<group>"; };
+		C40A184D18A6FF8D00F19DF6 /* THError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THError.h; sourceTree = "<group>"; };
+		C40A184E18A6FF8D00F19DF6 /* THError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THError.m; sourceTree = "<group>"; };
+		C40A185018A70DFC00F19DF6 /* THPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerController.h; sourceTree = "<group>"; };
+		C40A185118A70DFC00F19DF6 /* THPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerController.m; sourceTree = "<group>"; };
+		C40A185218A70DFC00F19DF6 /* THPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerViewController.h; sourceTree = "<group>"; };
+		C40A185318A70DFC00F19DF6 /* THPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerViewController.m; sourceTree = "<group>"; };
+		C40A185618A70EA500F19DF6 /* THPlayerOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerOverlayView.h; sourceTree = "<group>"; };
+		C40A185718A70EA500F19DF6 /* THPlayerOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerOverlayView.m; sourceTree = "<group>"; };
+		C40A185818A70EA500F19DF6 /* THPlayerOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THPlayerOverlayView.xib; sourceTree = "<group>"; };
+		C40A185918A70EA500F19DF6 /* THPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayerView.h; sourceTree = "<group>"; };
+		C40A185A18A70EA500F19DF6 /* THPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayerView.m; sourceTree = "<group>"; };
+		C40A185E18A70F1300F19DF6 /* THTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THTransport.h; sourceTree = "<group>"; };
+		C42C26F818A2038800A03713 /* THViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
+		C42C26F918A2038800A03713 /* THViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
+		C42C26FA18A2038800A03713 /* THCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraController.h; sourceTree = "<group>"; };
+		C42C26FB18A2038800A03713 /* THCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraController.m; sourceTree = "<group>"; };
+		C42C26FC18A2038800A03713 /* THBaseCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBaseCameraController.h; sourceTree = "<group>"; };
+		C42C26FD18A2038800A03713 /* THBaseCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBaseCameraController.m; sourceTree = "<group>"; };
+		C42C26FE18A2038800A03713 /* THCameraControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraControllerDelegate.h; sourceTree = "<group>"; };
+		C42C270418A203C200A03713 /* THCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaptureButton.h; sourceTree = "<group>"; };
+		C42C270518A203C200A03713 /* THCaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCaptureButton.m; sourceTree = "<group>"; };
+		C42C270A18A203C200A03713 /* THPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPreviewView.h; sourceTree = "<group>"; };
+		C42C270B18A203C200A03713 /* THPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPreviewView.m; sourceTree = "<group>"; };
+		C42C270C18A203C200A03713 /* THCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraView.h; sourceTree = "<group>"; };
+		C42C270D18A203C200A03713 /* THCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraView.m; sourceTree = "<group>"; };
+		C42C271718A203D000A03713 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
+		C42C271818A203D000A03713 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
+		C42C271B18A203D000A03713 /* UIView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+THAdditions.h"; sourceTree = "<group>"; };
+		C42C271C18A203D000A03713 /* UIView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+THAdditions.m"; sourceTree = "<group>"; };
+		C42C272118A20B3500A03713 /* THAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAssetsLibrary.h; sourceTree = "<group>"; };
+		C42C272218A20B3500A03713 /* THAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAssetsLibrary.m; sourceTree = "<group>"; };
+		C4B92AFB18A9A035000DCE44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C4B92AFD18A9A03B000DCE44 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C4B92AFF18A9AAC0000DCE44 /* UIAlertView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+THAdditions.h"; sourceTree = "<group>"; };
+		C4B92B0018A9AAC0000DCE44 /* UIAlertView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+THAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0747413218A143AC0060A1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B92AFE18A9A03B000DCE44 /* CoreMedia.framework in Frameworks */,
+				C4B92AFC18A9A035000DCE44 /* AVFoundation.framework in Frameworks */,
+				0747413B18A143AC0060A1F6 /* CoreGraphics.framework in Frameworks */,
+				0747413D18A143AC0060A1F6 /* UIKit.framework in Frameworks */,
+				0747413918A143AC0060A1F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0747412C18A143AC0060A1F6 = {
+			isa = PBXGroup;
+			children = (
+				0747413E18A143AC0060A1F6 /* SlowKamera */,
+				0747413718A143AC0060A1F6 /* Frameworks */,
+				0747413618A143AC0060A1F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0747413618A143AC0060A1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0747413518A143AC0060A1F6 /* SlowKamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0747413718A143AC0060A1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B92AFD18A9A03B000DCE44 /* CoreMedia.framework */,
+				C4B92AFB18A9A035000DCE44 /* AVFoundation.framework */,
+				0747413818A143AC0060A1F6 /* Foundation.framework */,
+				0747413A18A143AC0060A1F6 /* CoreGraphics.framework */,
+				0747413C18A143AC0060A1F6 /* UIKit.framework */,
+				0747415718A143AC0060A1F6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0747413E18A143AC0060A1F6 /* SlowKamera */ = {
+			isa = PBXGroup;
+			children = (
+				C42C26F718A2034000A03713 /* Categories */,
+				C42C26F518A2032D00A03713 /* Controllers */,
+				C42C272018A20B1E00A03713 /* Models */,
+				C42C26F618A2033600A03713 /* Views */,
+				0747413F18A143AC0060A1F6 /* Supporting Files */,
+				0747414718A143AC0060A1F6 /* THAppDelegate.h */,
+				0747414818A143AC0060A1F6 /* THAppDelegate.m */,
+				C40A184D18A6FF8D00F19DF6 /* THError.h */,
+				C40A184E18A6FF8D00F19DF6 /* THError.m */,
+				0747415018A143AC0060A1F6 /* Images.xcassets */,
+				0747414A18A143AC0060A1F6 /* Main.storyboard */,
+			);
+			path = SlowKamera;
+			sourceTree = "<group>";
+		};
+		0747413F18A143AC0060A1F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0747414018A143AC0060A1F6 /* SlowKamera-Info.plist */,
+				0747414118A143AC0060A1F6 /* InfoPlist.strings */,
+				0747414418A143AC0060A1F6 /* main.m */,
+				0747414618A143AC0060A1F6 /* SlowKamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C40A185F18A7115B00F19DF6 /* THPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C40A185018A70DFC00F19DF6 /* THPlayerController.h */,
+				C40A185118A70DFC00F19DF6 /* THPlayerController.m */,
+				C40A185218A70DFC00F19DF6 /* THPlayerViewController.h */,
+				C40A185318A70DFC00F19DF6 /* THPlayerViewController.m */,
+			);
+			name = THPlayer;
+			sourceTree = "<group>";
+		};
+		C40A186018A7117000F19DF6 /* THPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C40A185618A70EA500F19DF6 /* THPlayerOverlayView.h */,
+				C40A185718A70EA500F19DF6 /* THPlayerOverlayView.m */,
+				C40A185818A70EA500F19DF6 /* THPlayerOverlayView.xib */,
+				C40A185918A70EA500F19DF6 /* THPlayerView.h */,
+				C40A185A18A70EA500F19DF6 /* THPlayerView.m */,
+				C40A185E18A70F1300F19DF6 /* THTransport.h */,
+			);
+			name = THPlayer;
+			sourceTree = "<group>";
+		};
+		C42C26F518A2032D00A03713 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C40A185F18A7115B00F19DF6 /* THPlayer */,
+				C42C26FC18A2038800A03713 /* THBaseCameraController.h */,
+				C42C26FD18A2038800A03713 /* THBaseCameraController.m */,
+				C42C26FA18A2038800A03713 /* THCameraController.h */,
+				C42C26FB18A2038800A03713 /* THCameraController.m */,
+				C42C26FE18A2038800A03713 /* THCameraControllerDelegate.h */,
+				C42C26F818A2038800A03713 /* THViewController.h */,
+				C42C26F918A2038800A03713 /* THViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C42C26F618A2033600A03713 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C40A186018A7117000F19DF6 /* THPlayer */,
+				C42C270C18A203C200A03713 /* THCameraView.h */,
+				C42C270D18A203C200A03713 /* THCameraView.m */,
+				C42C270418A203C200A03713 /* THCaptureButton.h */,
+				C42C270518A203C200A03713 /* THCaptureButton.m */,
+				C42C270A18A203C200A03713 /* THPreviewView.h */,
+				C42C270B18A203C200A03713 /* THPreviewView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C42C26F718A2034000A03713 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C40A184A18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.h */,
+				C40A184B18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.m */,
+				C42C271718A203D000A03713 /* NSFileManager+THAdditions.h */,
+				C42C271818A203D000A03713 /* NSFileManager+THAdditions.m */,
+				C4B92AFF18A9AAC0000DCE44 /* UIAlertView+THAdditions.h */,
+				C4B92B0018A9AAC0000DCE44 /* UIAlertView+THAdditions.m */,
+				C42C271B18A203D000A03713 /* UIView+THAdditions.h */,
+				C42C271C18A203D000A03713 /* UIView+THAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C42C272018A20B1E00A03713 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C42C272118A20B3500A03713 /* THAssetsLibrary.h */,
+				C42C272218A20B3500A03713 /* THAssetsLibrary.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0747413418A143AC0060A1F6 /* SlowKamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0747416718A143AC0060A1F6 /* Build configuration list for PBXNativeTarget "SlowKamera" */;
+			buildPhases = (
+				0747413118A143AC0060A1F6 /* Sources */,
+				0747413218A143AC0060A1F6 /* Frameworks */,
+				0747413318A143AC0060A1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowKamera;
+			productName = SlowKamera;
+			productReference = 0747413518A143AC0060A1F6 /* SlowKamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0747412D18A143AC0060A1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "TapHarmonic, LLC";
+			};
+			buildConfigurationList = 0747413018A143AC0060A1F6 /* Build configuration list for PBXProject "SlowKamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0747412C18A143AC0060A1F6;
+			productRefGroup = 0747413618A143AC0060A1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0747413418A143AC0060A1F6 /* SlowKamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0747413318A143AC0060A1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0747415118A143AC0060A1F6 /* Images.xcassets in Resources */,
+				0747414318A143AC0060A1F6 /* InfoPlist.strings in Resources */,
+				C40A185C18A70EA500F19DF6 /* THPlayerOverlayView.xib in Resources */,
+				0747414C18A143AC0060A1F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0747413118A143AC0060A1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42C272318A20B3500A03713 /* THAssetsLibrary.m in Sources */,
+				C42C271F18A203D000A03713 /* UIView+THAdditions.m in Sources */,
+				C42C271118A203C200A03713 /* THCaptureButton.m in Sources */,
+				C40A184C18A6ED5400F19DF6 /* AVCaptureDevice+THAdditions.m in Sources */,
+				C40A185B18A70EA500F19DF6 /* THPlayerOverlayView.m in Sources */,
+				C42C270118A2038800A03713 /* THBaseCameraController.m in Sources */,
+				C40A185418A70DFC00F19DF6 /* THPlayerController.m in Sources */,
+				C4B92B0118A9AAC0000DCE44 /* UIAlertView+THAdditions.m in Sources */,
+				C42C270018A2038800A03713 /* THCameraController.m in Sources */,
+				C40A185D18A70EA500F19DF6 /* THPlayerView.m in Sources */,
+				C42C271418A203C200A03713 /* THPreviewView.m in Sources */,
+				C42C271D18A203D000A03713 /* NSFileManager+THAdditions.m in Sources */,
+				C40A184F18A6FF8D00F19DF6 /* THError.m in Sources */,
+				C42C26FF18A2038800A03713 /* THViewController.m in Sources */,
+				0747414918A143AC0060A1F6 /* THAppDelegate.m in Sources */,
+				0747414518A143AC0060A1F6 /* main.m in Sources */,
+				C40A185518A70DFC00F19DF6 /* THPlayerViewController.m in Sources */,
+				C42C271518A203C200A03713 /* THCameraView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0747414118A143AC0060A1F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747414218A143AC0060A1F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0747414A18A143AC0060A1F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747414B18A143AC0060A1F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0747416518A143AC0060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0747416618A143AC0060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0747416818A143AC0060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowKamera/SlowKamera-Prefix.pch";
+				INFOPLIST_FILE = "SlowKamera/SlowKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0747416918A143AC0060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowKamera/SlowKamera-Prefix.pch";
+				INFOPLIST_FILE = "SlowKamera/SlowKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0747413018A143AC0060A1F6 /* Build configuration list for PBXProject "SlowKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0747416518A143AC0060A1F6 /* Debug */,
+				0747416618A143AC0060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0747416718A143AC0060A1F6 /* Build configuration list for PBXNativeTarget "SlowKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0747416818A143AC0060A1F6 /* Debug */,
+				0747416918A143AC0060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0747412D18A143AC0060A1F6 /* Project object */;
+}

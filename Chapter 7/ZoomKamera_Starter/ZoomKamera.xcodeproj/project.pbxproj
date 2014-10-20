@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0740C77918A1466C002CBD00 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C77618A1466C002CBD00 /* THViewController.m */; };
+		0740C77A18A1466C002CBD00 /* THCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C77818A1466C002CBD00 /* THCameraController.m */; };
+		0740C77D18A14675002CBD00 /* THAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C77C18A14675002CBD00 /* THAssetsLibrary.m */; };
+		0740C78D18A1467E002CBD00 /* THCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C78118A1467E002CBD00 /* THCaptureButton.m */; };
+		0740C78E18A1467E002CBD00 /* THCameraModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C78318A1467E002CBD00 /* THCameraModeView.m */; };
+		0740C79018A1467E002CBD00 /* THPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C78718A1467E002CBD00 /* THPreviewView.m */; };
+		0740C79118A1467E002CBD00 /* THCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C78918A1467E002CBD00 /* THCameraView.m */; };
+		0740C79218A1467E002CBD00 /* THOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C78B18A1467E002CBD00 /* THOverlayView.m */; };
+		0740C79918A14688002CBD00 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C79418A14688002CBD00 /* NSFileManager+THAdditions.m */; };
+		0740C79A18A14688002CBD00 /* NSTimer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C79618A14688002CBD00 /* NSTimer+Additions.m */; };
+		0740C79B18A14688002CBD00 /* UIView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C79818A14688002CBD00 /* UIView+THAdditions.m */; };
+		0740C79E18A15340002CBD00 /* THBaseCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0740C79D18A15340002CBD00 /* THBaseCameraController.m */; };
+		0747407618A1434F0060A1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747407518A1434F0060A1F6 /* Foundation.framework */; };
+		0747407818A1434F0060A1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747407718A1434F0060A1F6 /* CoreGraphics.framework */; };
+		0747407A18A1434F0060A1F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0747407918A1434F0060A1F6 /* UIKit.framework */; };
+		0747408018A1434F0060A1F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0747407E18A1434F0060A1F6 /* InfoPlist.strings */; };
+		0747408218A1434F0060A1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747408118A1434F0060A1F6 /* main.m */; };
+		0747408618A1434F0060A1F6 /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747408518A1434F0060A1F6 /* THAppDelegate.m */; };
+		0747408918A1434F0060A1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0747408718A1434F0060A1F6 /* Main.storyboard */; };
+		0747408E18A1434F0060A1F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0747408D18A1434F0060A1F6 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0740C77518A1466C002CBD00 /* THViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
+		0740C77618A1466C002CBD00 /* THViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
+		0740C77718A1466C002CBD00 /* THCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraController.h; sourceTree = "<group>"; };
+		0740C77818A1466C002CBD00 /* THCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraController.m; sourceTree = "<group>"; };
+		0740C77B18A14675002CBD00 /* THAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAssetsLibrary.h; sourceTree = "<group>"; };
+		0740C77C18A14675002CBD00 /* THAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAssetsLibrary.m; sourceTree = "<group>"; };
+		0740C78018A1467E002CBD00 /* THCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaptureButton.h; sourceTree = "<group>"; };
+		0740C78118A1467E002CBD00 /* THCaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCaptureButton.m; sourceTree = "<group>"; };
+		0740C78218A1467E002CBD00 /* THCameraModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraModeView.h; sourceTree = "<group>"; };
+		0740C78318A1467E002CBD00 /* THCameraModeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraModeView.m; sourceTree = "<group>"; };
+		0740C78618A1467E002CBD00 /* THPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPreviewView.h; sourceTree = "<group>"; };
+		0740C78718A1467E002CBD00 /* THPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPreviewView.m; sourceTree = "<group>"; };
+		0740C78818A1467E002CBD00 /* THCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraView.h; sourceTree = "<group>"; };
+		0740C78918A1467E002CBD00 /* THCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraView.m; sourceTree = "<group>"; };
+		0740C78A18A1467E002CBD00 /* THOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THOverlayView.h; sourceTree = "<group>"; };
+		0740C78B18A1467E002CBD00 /* THOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THOverlayView.m; sourceTree = "<group>"; };
+		0740C79318A14688002CBD00 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
+		0740C79418A14688002CBD00 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
+		0740C79518A14688002CBD00 /* NSTimer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Additions.h"; sourceTree = "<group>"; };
+		0740C79618A14688002CBD00 /* NSTimer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Additions.m"; sourceTree = "<group>"; };
+		0740C79718A14688002CBD00 /* UIView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+THAdditions.h"; sourceTree = "<group>"; };
+		0740C79818A14688002CBD00 /* UIView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+THAdditions.m"; sourceTree = "<group>"; };
+		0740C79C18A15340002CBD00 /* THBaseCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBaseCameraController.h; sourceTree = "<group>"; };
+		0740C79D18A15340002CBD00 /* THBaseCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBaseCameraController.m; sourceTree = "<group>"; };
+		0747407218A1434F0060A1F6 /* ZoomKamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomKamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0747407518A1434F0060A1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0747407718A1434F0060A1F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0747407918A1434F0060A1F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0747407D18A1434F0060A1F6 /* ZoomKamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZoomKamera-Info.plist"; sourceTree = "<group>"; };
+		0747407F18A1434F0060A1F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0747408118A1434F0060A1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0747408318A1434F0060A1F6 /* ZoomKamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZoomKamera-Prefix.pch"; sourceTree = "<group>"; };
+		0747408418A1434F0060A1F6 /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		0747408518A1434F0060A1F6 /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		0747408818A1434F0060A1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0747408D18A1434F0060A1F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0747409418A1434F0060A1F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0747406F18A1434F0060A1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0747407818A1434F0060A1F6 /* CoreGraphics.framework in Frameworks */,
+				0747407A18A1434F0060A1F6 /* UIKit.framework in Frameworks */,
+				0747407618A1434F0060A1F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0740C77118A14642002CBD00 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0740C79318A14688002CBD00 /* NSFileManager+THAdditions.h */,
+				0740C79418A14688002CBD00 /* NSFileManager+THAdditions.m */,
+				0740C79518A14688002CBD00 /* NSTimer+Additions.h */,
+				0740C79618A14688002CBD00 /* NSTimer+Additions.m */,
+				0740C79718A14688002CBD00 /* UIView+THAdditions.h */,
+				0740C79818A14688002CBD00 /* UIView+THAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		0740C77218A14649002CBD00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0740C78018A1467E002CBD00 /* THCaptureButton.h */,
+				0740C78118A1467E002CBD00 /* THCaptureButton.m */,
+				0740C78218A1467E002CBD00 /* THCameraModeView.h */,
+				0740C78318A1467E002CBD00 /* THCameraModeView.m */,
+				0740C78618A1467E002CBD00 /* THPreviewView.h */,
+				0740C78718A1467E002CBD00 /* THPreviewView.m */,
+				0740C78818A1467E002CBD00 /* THCameraView.h */,
+				0740C78918A1467E002CBD00 /* THCameraView.m */,
+				0740C78A18A1467E002CBD00 /* THOverlayView.h */,
+				0740C78B18A1467E002CBD00 /* THOverlayView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0740C77318A14651002CBD00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0740C77B18A14675002CBD00 /* THAssetsLibrary.h */,
+				0740C77C18A14675002CBD00 /* THAssetsLibrary.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0740C77418A14657002CBD00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0740C77518A1466C002CBD00 /* THViewController.h */,
+				0740C77618A1466C002CBD00 /* THViewController.m */,
+				0740C77718A1466C002CBD00 /* THCameraController.h */,
+				0740C77818A1466C002CBD00 /* THCameraController.m */,
+				0740C79C18A15340002CBD00 /* THBaseCameraController.h */,
+				0740C79D18A15340002CBD00 /* THBaseCameraController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0747406918A1434F0060A1F6 = {
+			isa = PBXGroup;
+			children = (
+				0747407B18A1434F0060A1F6 /* ZoomKamera */,
+				0747407418A1434F0060A1F6 /* Frameworks */,
+				0747407318A1434F0060A1F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0747407318A1434F0060A1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0747407218A1434F0060A1F6 /* ZoomKamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0747407418A1434F0060A1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0747407518A1434F0060A1F6 /* Foundation.framework */,
+				0747407718A1434F0060A1F6 /* CoreGraphics.framework */,
+				0747407918A1434F0060A1F6 /* UIKit.framework */,
+				0747409418A1434F0060A1F6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0747407B18A1434F0060A1F6 /* ZoomKamera */ = {
+			isa = PBXGroup;
+			children = (
+				0740C77418A14657002CBD00 /* Controllers */,
+				0740C77318A14651002CBD00 /* Models */,
+				0740C77218A14649002CBD00 /* Views */,
+				0740C77118A14642002CBD00 /* Categories */,
+				0747408418A1434F0060A1F6 /* THAppDelegate.h */,
+				0747408518A1434F0060A1F6 /* THAppDelegate.m */,
+				0747408718A1434F0060A1F6 /* Main.storyboard */,
+				0747408D18A1434F0060A1F6 /* Images.xcassets */,
+				0747407C18A1434F0060A1F6 /* Supporting Files */,
+			);
+			path = ZoomKamera;
+			sourceTree = "<group>";
+		};
+		0747407C18A1434F0060A1F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0747407D18A1434F0060A1F6 /* ZoomKamera-Info.plist */,
+				0747407E18A1434F0060A1F6 /* InfoPlist.strings */,
+				0747408118A1434F0060A1F6 /* main.m */,
+				0747408318A1434F0060A1F6 /* ZoomKamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0747407118A1434F0060A1F6 /* ZoomKamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074740A418A1434F0060A1F6 /* Build configuration list for PBXNativeTarget "ZoomKamera" */;
+			buildPhases = (
+				0747406E18A1434F0060A1F6 /* Sources */,
+				0747406F18A1434F0060A1F6 /* Frameworks */,
+				0747407018A1434F0060A1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomKamera;
+			productName = ZoomKamera;
+			productReference = 0747407218A1434F0060A1F6 /* ZoomKamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0747406A18A1434F0060A1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "TapHarmonic, LLC";
+			};
+			buildConfigurationList = 0747406D18A1434F0060A1F6 /* Build configuration list for PBXProject "ZoomKamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0747406918A1434F0060A1F6;
+			productRefGroup = 0747407318A1434F0060A1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0747407118A1434F0060A1F6 /* ZoomKamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0747407018A1434F0060A1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0747408E18A1434F0060A1F6 /* Images.xcassets in Resources */,
+				0747408018A1434F0060A1F6 /* InfoPlist.strings in Resources */,
+				0747408918A1434F0060A1F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0747406E18A1434F0060A1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740C79B18A14688002CBD00 /* UIView+THAdditions.m in Sources */,
+				0740C78D18A1467E002CBD00 /* THCaptureButton.m in Sources */,
+				0740C78E18A1467E002CBD00 /* THCameraModeView.m in Sources */,
+				0740C79218A1467E002CBD00 /* THOverlayView.m in Sources */,
+				0740C77A18A1466C002CBD00 /* THCameraController.m in Sources */,
+				0740C77918A1466C002CBD00 /* THViewController.m in Sources */,
+				0740C79E18A15340002CBD00 /* THBaseCameraController.m in Sources */,
+				0740C79A18A14688002CBD00 /* NSTimer+Additions.m in Sources */,
+				0740C79018A1467E002CBD00 /* THPreviewView.m in Sources */,
+				0740C79918A14688002CBD00 /* NSFileManager+THAdditions.m in Sources */,
+				0740C77D18A14675002CBD00 /* THAssetsLibrary.m in Sources */,
+				0747408618A1434F0060A1F6 /* THAppDelegate.m in Sources */,
+				0747408218A1434F0060A1F6 /* main.m in Sources */,
+				0740C79118A1467E002CBD00 /* THCameraView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0747407E18A1434F0060A1F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747407F18A1434F0060A1F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0747408718A1434F0060A1F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747408818A1434F0060A1F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074740A218A1434F0060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		074740A318A1434F0060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074740A518A1434F0060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomKamera/ZoomKamera-Prefix.pch";
+				INFOPLIST_FILE = "ZoomKamera/ZoomKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		074740A618A1434F0060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomKamera/ZoomKamera-Prefix.pch";
+				INFOPLIST_FILE = "ZoomKamera/ZoomKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0747406D18A1434F0060A1F6 /* Build configuration list for PBXProject "ZoomKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074740A218A1434F0060A1F6 /* Debug */,
+				074740A318A1434F0060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074740A418A1434F0060A1F6 /* Build configuration list for PBXNativeTarget "ZoomKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074740A518A1434F0060A1F6 /* Debug */,
+				074740A618A1434F0060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0747406A18A1434F0060A1F6 /* Project object */;
+}

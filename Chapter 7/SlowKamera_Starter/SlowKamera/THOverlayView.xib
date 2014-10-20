@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THPlayerView">
+            <connections>
+                <outlet property="overlayView" destination="1" id="2et-qt-9ZA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="THOverlayView">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" id="VgK-oK-oYD" customClass="THFilmstripView">
+                    <rect key="frame" x="0.0" y="-99" width="568" height="99"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="eDs-n2-Ch6">
+                            <rect key="frame" x="0.0" y="43" width="568" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <connections>
+                        <outlet property="scrollView" destination="eDs-n2-Ch6" id="Ni5-SK-6yz"/>
+                    </connections>
+                </view>
+                <navigationBar contentMode="scaleToFill" id="rcP-zw-x92">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem id="Px5-np-mtj">
+                            <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="mQY-bO-gs1">
+                                <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="closeWindow:" destination="1" id="O8s-cy-wBu"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" id="unE-lf-7uw">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ue1-fp-s1g">
+                                    <rect key="frame" x="507" y="5" width="45" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Show">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="Hide"/>
+                                    <connections>
+                                        <action selector="toggleFilmstrip:" destination="1" eventType="touchUpInside" id="F9f-C2-Eo8"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xuI-VK-Lau">
+                    <rect key="frame" x="0.0" y="276" width="568" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ZKp-hg-lyu"/>
+                        <barButtonItem style="plain" id="IVo-P3-356">
+                            <button key="customView" contentMode="center" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Yf-eL-6Ej">
+                                <rect key="frame" x="82" y="6" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="play_button"/>
+                                <state key="selected" image="pause_button"/>
+                                <connections>
+                                    <action selector="togglePlayback:" destination="1" eventType="touchUpInside" id="kRg-4b-WGF"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="MgT-Pp-Vhq"/>
+                        <barButtonItem style="plain" id="GHA-Gl-jv9">
+                            <view key="customView" contentMode="scaleToFill" id="sc8-Rt-zbK">
+                                <rect key="frame" x="134" y="12" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pez-mE-XRl">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="lYE-Wc-sU5">
+                            <slider key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" id="bAP-oh-3et">
+                                <rect key="frame" x="186" y="5" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="lA9-i6-NDK">
+                            <view key="customView" contentMode="scaleToFill" id="vQK-Yr-8Y9">
+                                <rect key="frame" x="444" y="12" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N80-pE-ukV">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0z9-aK-Nq9"/>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" id="fw0-fG-1S8" userLabel="Info View">
+                    <rect key="frame" x="153" y="243" width="83" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="left" image="info_popup" id="RLf-dp-PAP" userLabel="Popup Image">
+                            <rect key="frame" x="0.0" y="0.0" width="83" height="33"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kmf-UC-16s" userLabel="Time Label">
+                            <rect key="frame" x="21" y="4" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="currentTimeLabel" destination="pez-mE-XRl" id="A5p-vx-mHv"/>
+                <outlet property="filmStripView" destination="VgK-oK-oYD" id="mb4-dJ-bIO"/>
+                <outlet property="filmstripToggleButton" destination="Ue1-fp-s1g" id="eo9-Db-hy3"/>
+                <outlet property="infoView" destination="fw0-fG-1S8" id="oZ1-TW-AaL"/>
+                <outlet property="navigationBar" destination="rcP-zw-x92" id="Aja-tJ-3oB"/>
+                <outlet property="remainingTimeLabel" destination="N80-pE-ukV" id="hzl-7Q-PEl"/>
+                <outlet property="scrubberSlider" destination="bAP-oh-3et" id="Z0a-o4-48l"/>
+                <outlet property="scrubbingTimeLabel" destination="kmf-UC-16s" id="MtE-Vf-K4D"/>
+                <outlet property="togglePlaybackButton" destination="7Yf-eL-6Ej" id="GGN-Vn-PhI"/>
+                <outlet property="toolbar" destination="xuI-VK-Lau" id="G2T-kK-xhE"/>
+                <outletCollection property="gestureRecognizers" destination="jFN-ba-WP8" appends="YES" id="RLk-PJ-FC0"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="jFN-ba-WP8" userLabel="Show Controls Tap Recognizer">
+            <connections>
+                <action selector="toggleControls:" destination="1" id="ctW-8q-Skq"/>
+                <outlet property="delegate" destination="1" id="mTI-jz-Kpw"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="info_popup" width="83" height="33"/>
+        <image name="pause_button" width="19" height="21"/>
+        <image name="play_button" width="21" height="24"/>
+    </resources>
+</document>

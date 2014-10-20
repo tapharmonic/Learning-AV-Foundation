@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074740F818A143810060A1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074740F718A143810060A1F6 /* Foundation.framework */; };
+		074740FA18A143810060A1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074740F918A143810060A1F6 /* CoreGraphics.framework */; };
+		074740FC18A143810060A1F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074740FB18A143810060A1F6 /* UIKit.framework */; };
+		0747410218A143810060A1F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0747410018A143810060A1F6 /* InfoPlist.strings */; };
+		0747410418A143810060A1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747410318A143810060A1F6 /* main.m */; };
+		0747410818A143810060A1F6 /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0747410718A143810060A1F6 /* THAppDelegate.m */; };
+		0747410B18A143810060A1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0747410918A143810060A1F6 /* Main.storyboard */; };
+		0747411018A143810060A1F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0747410F18A143810060A1F6 /* Images.xcassets */; };
+		C47495A918A48315001939A6 /* THCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495A018A48315001939A6 /* THCaptureButton.m */; };
+		C47495AA18A48315001939A6 /* THStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495A218A48315001939A6 /* THStatusView.m */; };
+		C47495AB18A48315001939A6 /* THPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495A418A48315001939A6 /* THPreviewView.m */; };
+		C47495AC18A48315001939A6 /* THCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495A618A48315001939A6 /* THCameraView.m */; };
+		C47495AD18A48315001939A6 /* THOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495A818A48315001939A6 /* THOverlayView.m */; };
+		C47495B618A48322001939A6 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495AF18A48322001939A6 /* THViewController.m */; };
+		C47495B718A48322001939A6 /* THCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495B118A48322001939A6 /* THCameraController.m */; };
+		C47495B818A48322001939A6 /* THBaseCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495B318A48322001939A6 /* THBaseCameraController.m */; };
+		C47495BF18A4832E001939A6 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495BA18A4832E001939A6 /* NSFileManager+THAdditions.m */; };
+		C47495C018A4832E001939A6 /* NSTimer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495BC18A4832E001939A6 /* NSTimer+Additions.m */; };
+		C47495C118A4832E001939A6 /* UIView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495BE18A4832E001939A6 /* UIView+THAdditions.m */; };
+		C47495C418A48338001939A6 /* THAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C47495C318A48338001939A6 /* THAssetsLibrary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		074740F418A143810060A1F6 /* CodeKamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeKamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074740F718A143810060A1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		074740F918A143810060A1F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		074740FB18A143810060A1F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		074740FF18A143810060A1F6 /* CodeKamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeKamera-Info.plist"; sourceTree = "<group>"; };
+		0747410118A143810060A1F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0747410318A143810060A1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0747410518A143810060A1F6 /* CodeKamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeKamera-Prefix.pch"; sourceTree = "<group>"; };
+		0747410618A143810060A1F6 /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		0747410718A143810060A1F6 /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		0747410A18A143810060A1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0747410F18A143810060A1F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0747411618A143810060A1F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C474959F18A48315001939A6 /* THCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaptureButton.h; sourceTree = "<group>"; };
+		C47495A018A48315001939A6 /* THCaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCaptureButton.m; sourceTree = "<group>"; };
+		C47495A118A48315001939A6 /* THStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusView.h; sourceTree = "<group>"; };
+		C47495A218A48315001939A6 /* THStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusView.m; sourceTree = "<group>"; };
+		C47495A318A48315001939A6 /* THPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPreviewView.h; sourceTree = "<group>"; };
+		C47495A418A48315001939A6 /* THPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPreviewView.m; sourceTree = "<group>"; };
+		C47495A518A48315001939A6 /* THCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraView.h; sourceTree = "<group>"; };
+		C47495A618A48315001939A6 /* THCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraView.m; sourceTree = "<group>"; };
+		C47495A718A48315001939A6 /* THOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THOverlayView.h; sourceTree = "<group>"; };
+		C47495A818A48315001939A6 /* THOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THOverlayView.m; sourceTree = "<group>"; };
+		C47495AE18A48322001939A6 /* THViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
+		C47495AF18A48322001939A6 /* THViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
+		C47495B018A48322001939A6 /* THCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraController.h; sourceTree = "<group>"; };
+		C47495B118A48322001939A6 /* THCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCameraController.m; sourceTree = "<group>"; };
+		C47495B218A48322001939A6 /* THBaseCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBaseCameraController.h; sourceTree = "<group>"; };
+		C47495B318A48322001939A6 /* THBaseCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBaseCameraController.m; sourceTree = "<group>"; };
+		C47495B418A48322001939A6 /* THCameraControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCameraControllerDelegate.h; sourceTree = "<group>"; };
+		C47495B518A48322001939A6 /* THCodeDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCodeDetectionDelegate.h; sourceTree = "<group>"; };
+		C47495B918A4832E001939A6 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
+		C47495BA18A4832E001939A6 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
+		C47495BB18A4832E001939A6 /* NSTimer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Additions.h"; sourceTree = "<group>"; };
+		C47495BC18A4832E001939A6 /* NSTimer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Additions.m"; sourceTree = "<group>"; };
+		C47495BD18A4832E001939A6 /* UIView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+THAdditions.h"; sourceTree = "<group>"; };
+		C47495BE18A4832E001939A6 /* UIView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+THAdditions.m"; sourceTree = "<group>"; };
+		C47495C218A48338001939A6 /* THAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAssetsLibrary.h; sourceTree = "<group>"; };
+		C47495C318A48338001939A6 /* THAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAssetsLibrary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074740F118A143810060A1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074740FA18A143810060A1F6 /* CoreGraphics.framework in Frameworks */,
+				074740FC18A143810060A1F6 /* UIKit.framework in Frameworks */,
+				074740F818A143810060A1F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074740EB18A143810060A1F6 = {
+			isa = PBXGroup;
+			children = (
+				074740FD18A143810060A1F6 /* CodeKamera */,
+				074740F618A143810060A1F6 /* Frameworks */,
+				074740F518A143810060A1F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		074740F518A143810060A1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074740F418A143810060A1F6 /* CodeKamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074740F618A143810060A1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				074740F718A143810060A1F6 /* Foundation.framework */,
+				074740F918A143810060A1F6 /* CoreGraphics.framework */,
+				074740FB18A143810060A1F6 /* UIKit.framework */,
+				0747411618A143810060A1F6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		074740FD18A143810060A1F6 /* CodeKamera */ = {
+			isa = PBXGroup;
+			children = (
+				C474959E18A482D5001939A6 /* Views */,
+				C474959C18A482C8001939A6 /* Controllers */,
+				C474959B18A482C4001939A6 /* Models */,
+				C474959A18A482B7001939A6 /* Categories */,
+				0747410618A143810060A1F6 /* THAppDelegate.h */,
+				0747410718A143810060A1F6 /* THAppDelegate.m */,
+				0747410918A143810060A1F6 /* Main.storyboard */,
+				0747410F18A143810060A1F6 /* Images.xcassets */,
+				074740FE18A143810060A1F6 /* Supporting Files */,
+			);
+			path = CodeKamera;
+			sourceTree = "<group>";
+		};
+		074740FE18A143810060A1F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074740FF18A143810060A1F6 /* CodeKamera-Info.plist */,
+				0747410018A143810060A1F6 /* InfoPlist.strings */,
+				0747410318A143810060A1F6 /* main.m */,
+				0747410518A143810060A1F6 /* CodeKamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C474959A18A482B7001939A6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C47495B918A4832E001939A6 /* NSFileManager+THAdditions.h */,
+				C47495BA18A4832E001939A6 /* NSFileManager+THAdditions.m */,
+				C47495BB18A4832E001939A6 /* NSTimer+Additions.h */,
+				C47495BC18A4832E001939A6 /* NSTimer+Additions.m */,
+				C47495BD18A4832E001939A6 /* UIView+THAdditions.h */,
+				C47495BE18A4832E001939A6 /* UIView+THAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C474959B18A482C4001939A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C47495C218A48338001939A6 /* THAssetsLibrary.h */,
+				C47495C318A48338001939A6 /* THAssetsLibrary.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C474959C18A482C8001939A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C47495AE18A48322001939A6 /* THViewController.h */,
+				C47495AF18A48322001939A6 /* THViewController.m */,
+				C47495B018A48322001939A6 /* THCameraController.h */,
+				C47495B118A48322001939A6 /* THCameraController.m */,
+				C47495B218A48322001939A6 /* THBaseCameraController.h */,
+				C47495B318A48322001939A6 /* THBaseCameraController.m */,
+				C47495B418A48322001939A6 /* THCameraControllerDelegate.h */,
+				C47495B518A48322001939A6 /* THCodeDetectionDelegate.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C474959E18A482D5001939A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C474959F18A48315001939A6 /* THCaptureButton.h */,
+				C47495A018A48315001939A6 /* THCaptureButton.m */,
+				C47495A118A48315001939A6 /* THStatusView.h */,
+				C47495A218A48315001939A6 /* THStatusView.m */,
+				C47495A318A48315001939A6 /* THPreviewView.h */,
+				C47495A418A48315001939A6 /* THPreviewView.m */,
+				C47495A518A48315001939A6 /* THCameraView.h */,
+				C47495A618A48315001939A6 /* THCameraView.m */,
+				C47495A718A48315001939A6 /* THOverlayView.h */,
+				C47495A818A48315001939A6 /* THOverlayView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074740F318A143810060A1F6 /* CodeKamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0747412618A143810060A1F6 /* Build configuration list for PBXNativeTarget "CodeKamera" */;
+			buildPhases = (
+				074740F018A143810060A1F6 /* Sources */,
+				074740F118A143810060A1F6 /* Frameworks */,
+				074740F218A143810060A1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeKamera;
+			productName = CodeKamera;
+			productReference = 074740F418A143810060A1F6 /* CodeKamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074740EC18A143810060A1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "TapHarmonic, LLC";
+			};
+			buildConfigurationList = 074740EF18A143810060A1F6 /* Build configuration list for PBXProject "CodeKamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074740EB18A143810060A1F6;
+			productRefGroup = 074740F518A143810060A1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074740F318A143810060A1F6 /* CodeKamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074740F218A143810060A1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0747411018A143810060A1F6 /* Images.xcassets in Resources */,
+				0747410218A143810060A1F6 /* InfoPlist.strings in Resources */,
+				0747410B18A143810060A1F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074740F018A143810060A1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47495B618A48322001939A6 /* THViewController.m in Sources */,
+				C47495AB18A48315001939A6 /* THPreviewView.m in Sources */,
+				C47495C018A4832E001939A6 /* NSTimer+Additions.m in Sources */,
+				C47495AA18A48315001939A6 /* THStatusView.m in Sources */,
+				C47495C118A4832E001939A6 /* UIView+THAdditions.m in Sources */,
+				C47495B718A48322001939A6 /* THCameraController.m in Sources */,
+				0747410818A143810060A1F6 /* THAppDelegate.m in Sources */,
+				C47495B818A48322001939A6 /* THBaseCameraController.m in Sources */,
+				C47495C418A48338001939A6 /* THAssetsLibrary.m in Sources */,
+				C47495A918A48315001939A6 /* THCaptureButton.m in Sources */,
+				C47495AD18A48315001939A6 /* THOverlayView.m in Sources */,
+				0747410418A143810060A1F6 /* main.m in Sources */,
+				C47495BF18A4832E001939A6 /* NSFileManager+THAdditions.m in Sources */,
+				C47495AC18A48315001939A6 /* THCameraView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0747410018A143810060A1F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747410118A143810060A1F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0747410918A143810060A1F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0747410A18A143810060A1F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0747412418A143810060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0747412518A143810060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0747412718A143810060A1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeKamera/CodeKamera-Prefix.pch";
+				INFOPLIST_FILE = "CodeKamera/CodeKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0747412818A143810060A1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeKamera/CodeKamera-Prefix.pch";
+				INFOPLIST_FILE = "CodeKamera/CodeKamera-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074740EF18A143810060A1F6 /* Build configuration list for PBXProject "CodeKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0747412418A143810060A1F6 /* Debug */,
+				0747412518A143810060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0747412618A143810060A1F6 /* Build configuration list for PBXNativeTarget "CodeKamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0747412718A143810060A1F6 /* Debug */,
+				0747412818A143810060A1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 074740EC18A143810060A1F6 /* Project object */;
+}
