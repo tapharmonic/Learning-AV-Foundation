@@ -95,7 +95,7 @@
 
 - (NSImage *)progressImage {
     NSImage *progressImage = [[NSImage alloc] initWithSize:self.bounds.size];
-    [progressImage setFlipped:NO];
+    [progressImage lockFocusFlipped:NO];
     [progressImage lockFocus];
     {
         [NSGraphicsContext saveGraphicsState];
