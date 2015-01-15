@@ -114,7 +114,10 @@
             }
         }
 
-        completionHandler(self.prepared);                                   // 6
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionHandler(self.prepared);
+        });
+
     }];
 }
 
@@ -140,8 +143,11 @@
             [manager moveItemAtURL:outputURL toURL:sourceURL error:nil];
             [self reset];                                                   // 5
         }
+        
         if (handler) {
-            handler(success);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                handler(success);
+            });
         }
     }];
 }
