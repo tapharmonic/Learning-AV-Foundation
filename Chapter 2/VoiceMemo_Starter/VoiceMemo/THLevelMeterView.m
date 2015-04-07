@@ -82,7 +82,7 @@
 
     CGFloat lightMinValue = 0.0f;
 
-    int peakLED = -1;
+    NSInteger peakLED = -1;
 
     if (self.peakLevel > 0.0f) {
         peakLED = self.peakLevel * self.ledCount;

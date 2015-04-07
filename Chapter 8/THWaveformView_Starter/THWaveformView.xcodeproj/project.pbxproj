@@ -166,11 +166,6 @@
 				CLASSPREFIX = TH;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "TapHarmonic, LLC";
-				TargetAttributes = {
-					C49965471974D1360070C06D = {
-						DevelopmentTeam = GV36U76CUM;
-					};
-				};
 			};
 			buildConfigurationList = C49965431974D1360070C06D /* Build configuration list for PBXProject "THWaveformView" */;
 			compatibilityVersion = "Xcode 3.2";

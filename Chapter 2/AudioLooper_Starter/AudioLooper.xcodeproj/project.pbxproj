@@ -182,11 +182,6 @@
 				CLASSPREFIX = TH;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "TapHarmonic, LLC";
-				TargetAttributes = {
-					C4AAD66A178A72BC0088288F = {
-						DevelopmentTeam = GV36U76CUM;
-					};
-				};
 			};
 			buildConfigurationList = C4AAD666178A72BC0088288F /* Build configuration list for PBXProject "AudioLooper" */;
 			compatibilityVersion = "Xcode 3.2";
