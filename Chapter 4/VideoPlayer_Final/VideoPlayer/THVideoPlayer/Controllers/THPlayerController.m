@@ -323,6 +323,7 @@ static const NSString *PlayerItemStatusContext;
                     object:self.player.currentItem];
         self.itemEndObserver = nil;
     }
+    [self.playerItem removeObserver:self forKeyPath:STATUS_KEYPATH];
 }
 
 @end
