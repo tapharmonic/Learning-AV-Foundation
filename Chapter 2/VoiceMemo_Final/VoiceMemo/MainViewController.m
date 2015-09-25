@@ -127,23 +127,25 @@
     [self.controller stopWithCompletionHandler:^(BOOL result) {
         double delayInSeconds = 0.01;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t) (delayInSeconds * NSEC_PER_SEC));
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Save Recording"
-                                                                message:@"Please provide a name"
-                                                               delegate:self
-                                                      cancelButtonTitle:@"Cancel"
-                                                      otherButtonTitles:@"OK", nil];
-            alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-            UITextField *textField = [alertView textFieldAtIndex:0];
-            textField.text = @"My Recording";
-            [alertView show];
+        dispatch_after(popTime, dispatch_get_main_queue(), ^{
+            [self showSaveDialog];
         });
     }];
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == OK_BUTTON) {
-        NSString *filename = [alertView textFieldAtIndex:0].text;
+- (void)showSaveDialog {
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Save Recording"
+                                          message:@"Please provide a name"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = NSLocalizedString(@"My Recording", @"Login");
+    }];
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSString *filename = [alertController.textFields.firstObject text];
         [self.controller saveRecordingWithName:filename completionHandler:^(BOOL success, id object) {
             if (success) {
                 [self.memos addObject:object];
@@ -153,7 +155,12 @@
                 NSLog(@"Error saving file: %@", [object localizedDescription]);
             }
         }];
-    }
+    }];
+
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 
