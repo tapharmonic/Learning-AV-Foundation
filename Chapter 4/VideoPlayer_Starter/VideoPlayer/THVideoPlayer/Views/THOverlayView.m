@@ -33,7 +33,7 @@
 @property (nonatomic) BOOL controlsHidden;
 @property (nonatomic) BOOL filmstripHidden;
 @property (strong, nonatomic) NSArray *excludedViews;
-@property (nonatomic, assign) CGFloat sliderOffset;
+//@property (nonatomic, assign) CGFloat sliderOffset;
 @property (nonatomic, assign) CGFloat infoViewOffset;
 @property (strong, nonatomic) NSTimer *timer;
 @property (assign) BOOL scrubbing;
@@ -59,7 +59,7 @@
     self.infoView.hidden = YES;
 
     [self calculateInfoViewOffset];
-    
+
     // Set up actions
     [self.scrubberSlider addTarget:self action:@selector(showPopupUI) forControlEvents:UIControlEventValueChanged];
     [self.scrubberSlider addTarget:self action:@selector(hidePopupUI) forControlEvents:UIControlEventTouchUpInside];
@@ -71,7 +71,7 @@
     self.filmStripView.layer.shadowOpacity = 0.8f;
 
     [self enableAirplay];
-    
+
     [self resetTimer];
 }
 
@@ -82,7 +82,7 @@
     self.volumeView.showsVolumeSlider = NO;
     self.volumeView.showsRouteButton = YES;
     [self.volumeView setRouteButtonImage:airplayImage forState:UIControlStateNormal];
-    
+
     [self.volumeView sizeToFit];
 
     NSMutableArray *items = [NSMutableArray arrayWithArray:self.toolbar.items];
@@ -95,8 +95,6 @@
 - (void)calculateInfoViewOffset {
     [self.infoView sizeToFit];
     self.infoViewOffset = ceilf(CGRectGetWidth(self.infoView.frame) / 2);
-    CGRect trackRect = [self.scrubberSlider trackRectForBounds:self.scrubberSlider.bounds];
-    self.sliderOffset = self.scrubberSlider.frame.origin.x + trackRect.origin.x + 12;
 }
 
 - (IBAction)showSubtitles:(id)sender {
@@ -234,17 +232,17 @@
 
 - (void)showPopupUI {
     self.infoView.hidden = NO;
-    CGRect trackRect = [self.scrubberSlider trackRectForBounds:self.scrubberSlider.bounds];
+    CGRect trackRect = [self.scrubberSlider convertRect:self.scrubberSlider.bounds toView:nil];
     CGRect thumbRect = [self.scrubberSlider thumbRectForBounds:self.scrubberSlider.bounds trackRect:trackRect value:self.scrubberSlider.value];
 
     CGRect rect = self.infoView.frame;
-    // The +1 is a fudge factor due to the scrubber knob being larger than normal
-    rect.origin.x = (self.sliderOffset + thumbRect.origin.x) - self.infoViewOffset;
+    rect.origin.x = (thumbRect.origin.x) - self.infoViewOffset + 16;
+    rect.origin.y = self.boundsHeight - 80;
     self.infoView.frame = rect;
 
     self.currentTimeLabel.text = @"-- : --";
-	self.remainingTimeLabel.text = @"-- : --";
-    
+    self.remainingTimeLabel.text = @"-- : --";
+
     [self setScrubbingTime:self.scrubberSlider.value];
     [self.delegate scrubbedToTime:self.scrubberSlider.value];
 }

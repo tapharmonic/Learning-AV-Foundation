@@ -56,7 +56,7 @@
 
     CGFloat currentX = 0.0f;
 
-    CGSize size = [[[self.thumbnails firstObject] image] size];
+    CGSize size = [(UIImage *)[[self.thumbnails firstObject] image] size];
     // Scale retina image down to appropriate size
     CGSize imageSize = CGSizeApplyAffineTransform(size, CGAffineTransformMakeScale(0.5, 0.5));
     CGRect imageRect = CGRectMake(currentX, 0, imageSize.width, imageSize.height);
