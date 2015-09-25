@@ -39,6 +39,7 @@
 @property (strong, nonatomic) IBOutlet THCaptureButton *captureButton;
 @property (nonatomic) BOOL maxLeft;
 @property (nonatomic) BOOL maxRight;
+@property (nonatomic) CGFloat videoStringWidth;
 @end
 
 @implementation THCameraModeView
@@ -69,14 +70,17 @@
     _videoTextLayer.foregroundColor = self.foregroundColor.CGColor;
     _photoTextLayer = [self textLayerWithTitle:@"PHOTO"];
 
-    _videoTextLayer.frame = CGRectMake(0.0f, 0.0f, 50.0f, 20.0f);
+    CGSize size = [@"VIDEO" sizeWithAttributes:[self fontAttributes]];
+    self.videoStringWidth = size.width;
+    _videoTextLayer.frame = CGRectMake(0.0f, 0.0f, 40.0f, 20.0f);
     _photoTextLayer.frame = CGRectMake(60.0f, 0.0f, 50.0f, 20.0f);
-    CGRect containerRect = CGRectMake(CGRectGetMidX(self.bounds) - 20, 0.0f, 120, 20);
+    CGRect containerRect = CGRectMake(0.0f, 0.0f, 120.0, 20.0);
     _labelContainerView = [[UIView alloc] initWithFrame:containerRect];
     _labelContainerView.backgroundColor = [UIColor clearColor];
     
     [_labelContainerView.layer addSublayer:_videoTextLayer];
     [_labelContainerView.layer addSublayer:_photoTextLayer];
+    _labelContainerView.backgroundColor = [UIColor clearColor];
     [self addSubview:_labelContainerView];
     
     self.labelContainerView.centerY += 8.0f;
@@ -148,13 +152,14 @@
 
 - (CATextLayer *)textLayerWithTitle:(NSString *)title {
     CATextLayer *layer = [CATextLayer layer];
-    CTFontRef ctfont = CTFontCreateWithName((__bridge CFStringRef)@"AvenirNextCondensed-DemiBold", 17.0f, NULL);
-    layer.foregroundColor = [UIColor whiteColor].CGColor;
-    layer.font = ctfont;
-    layer.fontSize = 17.0f;
-    layer.string = title;
+    layer.string = [[NSAttributedString alloc] initWithString:title attributes:[self fontAttributes]];
     layer.contentsScale = [UIScreen mainScreen].scale;
     return layer;
+}
+
+- (NSDictionary *)fontAttributes {
+    return @{NSFontAttributeName: [UIFont fontWithName:@"AvenirNextCondensed-DemiBold" size:17.0f],
+             NSForegroundColorAttributeName: [UIColor whiteColor]};
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -163,6 +168,11 @@
     
     CGRect circleRect = CGRectMake(CGRectGetMidX(rect) - 4.0f, 2.0f, 6.0f, 6.0f);
     CGContextFillEllipseInRect(context, circleRect);
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.labelContainerView.frameX = CGRectGetMidX(self.bounds) - (self.videoStringWidth / 2.0);
 }
 
 @end

@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="THViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u5e-zZ-5UZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BTr-UP-KnC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="THCameraView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="L7h-C1-yGF" customClass="THPreviewView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-C1-yGF" customClass="THPreviewView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="laS-Jl-RZ1" customClass="THOverlayView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laS-Jl-RZ1" customClass="THOverlayView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="18I-er-Pkx" customClass="THCameraModeView">
-                                        <rect key="frame" x="0.0" y="458" width="320" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18I-er-Pkx" customClass="THCameraModeView">
+                                        <rect key="frame" x="-4" y="458" width="324" height="110"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79M-kt-Zrg" customClass="THCaptureButton">
-                                                <rect key="frame" x="126" y="34" width="68" height="68"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79M-kt-Zrg" customClass="THCaptureButton">
+                                                <rect key="frame" x="128" y="34" width="68" height="68"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="68" id="9fF-nl-z6s"/>
+                                                    <constraint firstAttribute="height" constant="68" id="qgP-Bj-v1j"/>
+                                                </constraints>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -36,10 +42,13 @@
                                                     <action selector="captureOrRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vor-2a-Nie"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uWr-75-Ssm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWr-75-Ssm">
                                                 <rect key="frame" x="40" y="45" width="45" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="2F5-aI-ZZL"/>
+                                                    <constraint firstAttribute="width" constant="45" id="JWu-LS-x7p"/>
+                                                </constraints>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -49,41 +58,69 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="79M-kt-Zrg" secondAttribute="bottom" constant="8" id="LN4-XN-GNw"/>
+                                            <constraint firstAttribute="height" constant="110" id="OBF-iP-nLg"/>
+                                            <constraint firstItem="uWr-75-Ssm" firstAttribute="leading" secondItem="18I-er-Pkx" secondAttribute="leading" constant="40" id="Wro-hC-5YO"/>
+                                            <constraint firstItem="79M-kt-Zrg" firstAttribute="centerX" secondItem="18I-er-Pkx" secondAttribute="centerX" id="ZO7-j1-PV8"/>
+                                            <constraint firstAttribute="bottom" secondItem="uWr-75-Ssm" secondAttribute="bottom" constant="20" id="dF7-qp-LXi"/>
+                                            <constraint firstItem="uWr-75-Ssm" firstAttribute="top" secondItem="18I-er-Pkx" secondAttribute="top" constant="45" id="nVo-3w-fWz"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="cameraModeChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Hww-JO-X3B"/>
                                             <outlet property="captureButton" destination="79M-kt-Zrg" id="7Fl-4O-jIa"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" id="7wn-o9-tZQ" customClass="THStatusView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wn-o9-tZQ" customClass="THStatusView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="C0E-a8-kQH" customClass="THFlashControl">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-a8-kQH" customClass="THFlashControl">
                                                 <rect key="frame" x="16" y="0.0" width="48" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="PnA-RN-ETo"/>
+                                                    <constraint firstAttribute="width" constant="48" id="bR6-If-QTI"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="flashControlChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dSb-BH-RtG"/>
                                                 </connections>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TMG-5P-4Sz" userLabel="Switch Camera Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMG-5P-4Sz" userLabel="Switch Camera Button">
                                                 <rect key="frame" x="264" y="0.0" width="56" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Uh3-75-Mgm"/>
+                                                    <constraint firstAttribute="width" constant="56" id="VfV-Vg-RWl"/>
+                                                </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="camera_icon"/>
                                                 <connections>
                                                     <action selector="swapCameras:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LF3-Ca-qWj"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5T-5G-9pX">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-5G-9pX">
                                                 <rect key="frame" x="119" y="11" width="82" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="82" id="4EM-nP-fDa"/>
+                                                    <constraint firstAttribute="height" constant="26" id="v3Q-9s-iSo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="F5T-5G-9pX" secondAttribute="bottom" constant="11" id="7v4-nF-S6C"/>
+                                            <constraint firstAttribute="bottom" secondItem="TMG-5P-4Sz" secondAttribute="bottom" id="8RH-st-5Ra"/>
+                                            <constraint firstAttribute="bottom" secondItem="C0E-a8-kQH" secondAttribute="bottom" id="Ecg-AY-b5P"/>
+                                            <constraint firstItem="TMG-5P-4Sz" firstAttribute="top" secondItem="7wn-o9-tZQ" secondAttribute="top" id="HHk-pN-P2V"/>
+                                            <constraint firstAttribute="height" constant="48" id="JLN-sq-0KH"/>
+                                            <constraint firstItem="C0E-a8-kQH" firstAttribute="top" secondItem="7wn-o9-tZQ" secondAttribute="top" id="SSd-HY-3iE"/>
+                                            <constraint firstItem="F5T-5G-9pX" firstAttribute="top" secondItem="7wn-o9-tZQ" secondAttribute="top" constant="11" id="a76-4Y-2MU"/>
+                                            <constraint firstItem="F5T-5G-9pX" firstAttribute="centerX" secondItem="7wn-o9-tZQ" secondAttribute="centerX" id="aEX-35-W2u"/>
+                                            <constraint firstAttribute="trailing" secondItem="TMG-5P-4Sz" secondAttribute="trailing" id="ezT-xW-i0e"/>
+                                            <constraint firstItem="C0E-a8-kQH" firstAttribute="leading" secondItem="7wn-o9-tZQ" secondAttribute="leading" constant="16" id="rEr-bP-KDQ"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="elapsedTimeLabel" destination="F5T-5G-9pX" id="ov6-r7-s2y"/>
                                             <outlet property="flashControl" destination="C0E-a8-kQH" id="d5u-zC-BIc"/>
@@ -91,6 +128,13 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7wn-o9-tZQ" firstAttribute="top" secondItem="laS-Jl-RZ1" secondAttribute="top" id="7sB-PW-ts5"/>
+                                    <constraint firstAttribute="trailing" secondItem="18I-er-Pkx" secondAttribute="trailing" id="fcZ-b0-gZ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="18I-er-Pkx" secondAttribute="bottom" id="j9O-Z9-Ofi"/>
+                                    <constraint firstItem="7wn-o9-tZQ" firstAttribute="leading" secondItem="laS-Jl-RZ1" secondAttribute="leading" id="rRP-qe-GZn"/>
+                                    <constraint firstAttribute="trailing" secondItem="7wn-o9-tZQ" secondAttribute="trailing" id="spb-Z3-ie0"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="modeView" destination="18I-er-Pkx" id="KCt-Lo-gJv"/>
                                     <outlet property="statusView" destination="7wn-o9-tZQ" id="NNV-Ce-02U"/>
@@ -98,6 +142,17 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="laS-Jl-RZ1" secondAttribute="trailing" id="61R-zA-f8a"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="bottom" secondItem="L7h-C1-yGF" secondAttribute="bottom" id="98L-NA-HGe"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="leading" secondItem="L7h-C1-yGF" secondAttribute="leading" id="O1g-Vz-dwJ"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="top" secondItem="u5e-zZ-5UZ" secondAttribute="bottom" id="SVn-gv-UOD"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="trailing" secondItem="L7h-C1-yGF" secondAttribute="trailing" id="fOc-8q-DHB"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="top" secondItem="L7h-C1-yGF" secondAttribute="top" id="fhH-64-fGw"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="bottom" secondItem="BTr-UP-KnC" secondAttribute="top" id="o3K-y1-TGB"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qNy-4i-IBQ"/>
+                            <constraint firstItem="18I-er-Pkx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="zw3-Fr-vCO"/>
+                        </constraints>
                         <connections>
                             <outlet property="controlsView" destination="laS-Jl-RZ1" id="o4D-OC-zIe"/>
                             <outlet property="previewView" destination="L7h-C1-yGF" id="M8x-TL-Dtw"/>
@@ -118,9 +173,4 @@
     <resources>
         <image name="camera_icon" width="28" height="21"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
