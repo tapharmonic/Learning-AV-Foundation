@@ -18,7 +18,7 @@
 		074654EF1799F03E00BAB698 /* THMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074654ED1799F03E00BAB698 /* THMainWindow.xib */; };
 		0767FA8B179D867000E5F0C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0767FA8A179D867000E5F0C7 /* AVFoundation.framework */; };
 		0767FA93179DBF1E00E5F0C7 /* THMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767FA92179DBF1E00E5F0C7 /* THMediaItem.m */; };
-		07A8BCB2179F08910066EA84 /* AVMetadataItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A8BCB1179F08910066EA84 /* AVMetadataItem+THAdditions.m */; settings = {COMPILER_FLAGS = "-Xanalyzer -analyzer-disable-checker"; }; };
+		07A8BCB2179F08910066EA84 /* AVMetadataItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A8BCB1179F08910066EA84 /* AVMetadataItem+THAdditions.m */; };
 		07EE966E17A9ADE100B01434 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EE966D17A9ADE100B01434 /* NSFileManager+DirectoryLocations.m */; };
 		C410FE6817A102A80097FCDD /* THMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = C410FE6717A102A80097FCDD /* THMetadata.m */; };
 		C42ADB8117A7564F004A6910 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C42ADB8017A7564F004A6910 /* AppIcon.icns */; };
@@ -246,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TH;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "TapHarmonic, LLC";
 			};
 			buildConfigurationList = 074654C61799F01B00BAB698 /* Build configuration list for PBXProject "MetaManager" */;
@@ -351,6 +351,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -403,6 +404,7 @@
 				GCC_PREFIX_HEADER = "MetaManager/MetaManager-Prefix.pch";
 				INFOPLIST_FILE = "MetaManager/MetaManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tapharmonic.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -417,6 +419,7 @@
 				GCC_PREFIX_HEADER = "MetaManager/MetaManager-Prefix.pch";
 				INFOPLIST_FILE = "MetaManager/MetaManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tapharmonic.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;

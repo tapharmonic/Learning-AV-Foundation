@@ -106,7 +106,7 @@
     } else {
         self.mediaItem = nil;
         self.genreCombo.objectValue = nil;
-        [self.mediaItemsController setSelectedObjects:nil];
+        [self.mediaItemsController setSelectedObjects:@[]];
     }
     [self.genreCombo reloadData];
     [self updateFieldState];
