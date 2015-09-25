@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.AVKitIBPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="THDocument">
             <connections>
+                <outlet property="playerView" destination="yfh-YO-8JT" id="UE4-lj-ftW"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="Window" customClass="THWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="133" y="235" width="640" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <value key="minSize" type="size" width="94" height="86"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="100" y="457" width="640" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="640" height="360"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="640" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <avPlayerView controlsStyle="floating" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-YO-8JT">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="360"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yfh-YO-8JT" secondAttribute="height" multiplier="16:9" id="vBW-W0-Hxw"/>
+                        </constraints>
+                    </avPlayerView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yfh-YO-8JT" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="6A3-zK-5Kj"/>
+                    <constraint firstAttribute="bottom" secondItem="yfh-YO-8JT" secondAttribute="bottom" id="JWa-8c-4Vt"/>
+                    <constraint firstItem="yfh-YO-8JT" firstAttribute="top" secondItem="6" secondAttribute="top" id="bXt-w8-CVS"/>
+                    <constraint firstAttribute="trailing" secondItem="yfh-YO-8JT" secondAttribute="trailing" id="uba-Ym-c18"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="17"/>
