@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,16 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-bF-Jla" customClass="THWaveformView">
-                                <rect key="frame" x="20" y="52" width="528" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMj-AK-hSi" customClass="THWaveformView">
-                                <rect key="frame" x="20" y="176" width="528" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-1c-k4g">
+                                <rect key="frame" x="0.0" y="34" width="568" height="252"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-bF-Jla" customClass="THWaveformView">
+                                        <rect key="frame" x="20" y="20" width="528" height="88"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="Z9c-Wq-kqe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMj-AK-hSi" customClass="THWaveformView">
+                                        <rect key="frame" x="20" y="144" width="528" height="88"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="VSI-I1-tMX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CMj-AK-hSi" secondAttribute="bottom" constant="20" id="29H-yN-caT"/>
+                                    <constraint firstItem="Fbd-bF-Jla" firstAttribute="top" secondItem="Eyc-1c-k4g" secondAttribute="top" constant="20" id="3sh-A6-PgE"/>
+                                    <constraint firstAttribute="trailing" secondItem="CMj-AK-hSi" secondAttribute="trailing" constant="20" id="L8H-EQ-uUY"/>
+                                    <constraint firstAttribute="height" constant="252" id="XDp-Ri-jNU"/>
+                                    <constraint firstItem="Fbd-bF-Jla" firstAttribute="leading" secondItem="Eyc-1c-k4g" secondAttribute="leading" constant="20" id="arx-Nf-riy"/>
+                                    <constraint firstItem="CMj-AK-hSi" firstAttribute="leading" secondItem="Eyc-1c-k4g" secondAttribute="leading" constant="20" id="r4z-24-aZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fbd-bF-Jla" secondAttribute="trailing" constant="20" id="wL8-Hd-ih0"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eyc-1c-k4g" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="ZXh-DQ-N4Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eyc-1c-k4g" secondAttribute="trailing" constant="-20" id="cwN-Rt-Tbc"/>
+                            <constraint firstItem="Eyc-1c-k4g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="w3C-3M-Yeq"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -39,9 +66,4 @@
             <point key="canvasLocation" x="23" y="128"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

@@ -49,7 +49,7 @@
     for (NSString *text in filterNames) {
         UILabel *label = [[UILabel alloc] initWithFrame:frame];
         label.backgroundColor = [UIColor clearColor];
-        label.font = [UIFont boldSystemFontOfSize:22.0f];
+        label.font = [UIFont boldSystemFontOfSize:20.0f];
         label.textColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = text;

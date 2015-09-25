@@ -1,8 +1,8 @@
 //
 //  MIT License
 //
-//  Copyright (c) 2015 Bob McCune http://bobmccune.com/
-//  Copyright (c) 2015 TapHarmonic, LLC http://tapharmonic.com/
+//  Copyright (c) 2014 Bob McCune http://bobmccune.com/
+//  Copyright (c) 2014 TapHarmonic, LLC http://tapharmonic.com/
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
