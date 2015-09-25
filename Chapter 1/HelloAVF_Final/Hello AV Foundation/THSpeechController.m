@@ -67,7 +67,7 @@
         AVSpeechUtterance *utterance =
             [[AVSpeechUtterance alloc] initWithString:self.speechStrings[i]];
         utterance.voice = self.voices[i % 2];
-        utterance.rate = 0.4f;
+        utterance.rate = 0.5f;
         utterance.pitchMultiplier = 0.8f;
         utterance.postUtteranceDelay = 0.1f;
         [self.synthesizer speakUtterance:utterance];
