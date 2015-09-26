@@ -30,29 +30,29 @@ static const CGFloat TIMELINE_SECONDS = 15.0f;
 static const CGFloat TIMELINE_WIDTH = 1014.0f;
 
 static inline BOOL THIsEmpty(id value) {
-	return value == nil ||
-	value == [NSNull null] ||
-	([value isKindOfClass:[NSString class]] && [value length] == 0) ||
-	([value respondsToSelector:@selector(count)] && [value count] == 0);
+    return value == nil ||
+    value == [NSNull null] ||
+    ([value isKindOfClass:[NSString class]] && [value length] == 0) ||
+    ([value respondsToSelector:@selector(count)] && [value count] == 0);
 }
 
 static inline CGFloat THGetWidthForTimeRange(CMTimeRange timeRange, CGFloat scaleFactor) {
-	return CMTimeGetSeconds(timeRange.duration) * scaleFactor;
+    return CMTimeGetSeconds(timeRange.duration) * scaleFactor;
 }
 
 static inline CGPoint THGetOriginForTime(CMTime time) {
-	CGFloat seconds = CMTimeGetSeconds(time);
-	return CGPointMake(seconds * (TIMELINE_WIDTH / TIMELINE_SECONDS), 0);
+    CGFloat seconds = CMTimeGetSeconds(time);
+    return CGPointMake(seconds * (TIMELINE_WIDTH / TIMELINE_SECONDS), 0);
 }
 
 static inline CMTimeRange THGetTimeRangeForWidth(CGFloat width, CGFloat scaleFactor) {
-	CGFloat duration = width / scaleFactor;
-	return CMTimeRangeMake(kCMTimeZero, CMTimeMakeWithSeconds(duration, scaleFactor));
+    CGFloat duration = width / scaleFactor;
+    return CMTimeRangeMake(kCMTimeZero, CMTimeMakeWithSeconds(duration, NSEC_PER_SEC));
 }
 
 static inline CMTime THGetTimeForOrigin(CGFloat origin, CGFloat scaleFactor) {
-	CGFloat seconds = origin / scaleFactor;
-	return CMTimeMakeWithSeconds(seconds, scaleFactor);
+    CGFloat seconds = origin / scaleFactor;
+    return CMTimeMakeWithSeconds(seconds, NSEC_PER_SEC);
 }
 
 static inline CGFloat THDegreesToRadians(CGFloat degrees) {

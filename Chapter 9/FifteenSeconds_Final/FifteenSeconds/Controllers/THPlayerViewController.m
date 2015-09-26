@@ -58,8 +58,6 @@ static const NSString *PlayerItemStatusContext;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.autoplayContent = YES;
-	self.player = [AVPlayer playerWithPlayerItem:nil];
-	self.playbackView.player = self.player;
 	[self.view bringSubviewToFront:self.loadingView];
 }
 
@@ -89,7 +87,13 @@ static const NSString *PlayerItemStatusContext;
 
 - (void)prepareToPlay {
 
-	[self.player replaceCurrentItemWithPlayerItem:self.playerItem];
+    if (!self.player) {
+        self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+        self.playbackView.player = self.player;
+    } else {
+        [self.player replaceCurrentItemWithPlayerItem:self.playerItem];
+    }
+
 	[self.playerItem addObserver:self forKeyPath:STATUS_KEYPATH options:0 context:&PlayerItemStatusContext];
 
 	[[NSNotificationCenter defaultCenter] addObserver:self

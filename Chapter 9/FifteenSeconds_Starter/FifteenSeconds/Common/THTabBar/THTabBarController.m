@@ -54,13 +54,9 @@
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)bundle {
-    return [self init];
-}
-
 - (void)awakeFromNib {
-	[self performSegueWithIdentifier:@"THSetVideoPickerViewController" sender:self];
-	[self performSegueWithIdentifier:@"THSetAudioPickerViewController" sender:self];
+    [self performSegueWithIdentifier:@"THSetVideoPickerViewController" sender:self];
+    [self performSegueWithIdentifier:@"THSetAudioPickerViewController" sender:self];
 }
 
 - (void)setTabBarAnchor:(THTabBarAnchor)tabBarAnchor {
