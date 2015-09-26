@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="THViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qil-d9-T6G"/>
+                        <viewControllerLayoutGuide type="bottom" id="55p-aX-u3t"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="THCameraView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="L7h-C1-yGF" customClass="THPreviewView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-C1-yGF" customClass="THPreviewView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="laS-Jl-RZ1" customClass="THOverlayView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laS-Jl-RZ1" customClass="THOverlayView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="18I-er-Pkx" customClass="THCameraModeView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18I-er-Pkx" customClass="THCameraModeView">
                                         <rect key="frame" x="0.0" y="458" width="320" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79M-kt-Zrg" customClass="THCaptureButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79M-kt-Zrg" customClass="THCaptureButton">
                                                 <rect key="frame" x="126" y="34" width="68" height="68"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="Cs6-QU-xVV"/>
+                                                    <constraint firstAttribute="width" constant="68" id="k2V-j4-6zI"/>
+                                                </constraints>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -36,10 +41,13 @@
                                                     <action selector="captureOrRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vor-2a-Nie"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uWr-75-Ssm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWr-75-Ssm">
                                                 <rect key="frame" x="40" y="45" width="45" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="TLp-Ru-zI3"/>
+                                                    <constraint firstAttribute="width" constant="45" id="q2x-Z0-BKt"/>
+                                                </constraints>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -49,14 +57,20 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="79M-kt-Zrg" secondAttribute="bottom" constant="8" id="4Bm-EP-sSS"/>
+                                            <constraint firstAttribute="height" constant="110" id="T9f-dB-nXt"/>
+                                            <constraint firstItem="uWr-75-Ssm" firstAttribute="leading" secondItem="18I-er-Pkx" secondAttribute="leading" constant="40" id="Zjb-aJ-em5"/>
+                                            <constraint firstAttribute="bottom" secondItem="uWr-75-Ssm" secondAttribute="bottom" constant="20" id="uMx-8e-he0"/>
+                                            <constraint firstItem="79M-kt-Zrg" firstAttribute="centerX" secondItem="18I-er-Pkx" secondAttribute="centerX" id="yEl-Ts-BOu"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="cameraModeChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Hww-JO-X3B"/>
                                             <outlet property="captureButton" destination="79M-kt-Zrg" id="7Fl-4O-jIa"/>
                                         </connections>
                                     </view>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="XBL-9y-6lG">
-                                        <rect key="frame" x="78" y="25" width="165" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XBL-9y-6lG">
+                                        <rect key="frame" x="78" y="26.5" width="165" height="31"/>
                                         <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,9 +78,12 @@
                                             <action selector="zoomToValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ktW-mV-LM9"/>
                                         </connections>
                                     </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feg-cf-Ij9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feg-cf-Ij9">
                                         <rect key="frame" x="20" y="20" width="44" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="3Zd-nE-nxU"/>
+                                            <constraint firstAttribute="height" constant="44" id="Am6-8c-xh2"/>
+                                        </constraints>
                                         <state key="normal" image="min_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -75,9 +92,12 @@
                                             <action selector="rampZoomToValue:" destination="vXZ-lx-hvc" eventType="touchDown" id="wvP-EQ-X0p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yMN-OJ-Guu">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-OJ-Guu">
                                         <rect key="frame" x="256" y="20" width="44" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7nL-Fw-x9u"/>
+                                            <constraint firstAttribute="width" constant="44" id="Vvk-Xg-gPg"/>
+                                        </constraints>
                                         <state key="normal" image="max_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -88,12 +108,34 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yMN-OJ-Guu" firstAttribute="leading" secondItem="XBL-9y-6lG" secondAttribute="trailing" constant="15" id="7CQ-eu-otx"/>
+                                    <constraint firstItem="XBL-9y-6lG" firstAttribute="centerY" secondItem="feg-cf-Ij9" secondAttribute="centerY" id="BOT-ol-s9g"/>
+                                    <constraint firstItem="feg-cf-Ij9" firstAttribute="leading" secondItem="laS-Jl-RZ1" secondAttribute="leading" constant="20" id="HFQ-rc-ZXy"/>
+                                    <constraint firstAttribute="trailing" secondItem="18I-er-Pkx" secondAttribute="trailing" id="Ih1-GL-YAt"/>
+                                    <constraint firstItem="yMN-OJ-Guu" firstAttribute="top" secondItem="laS-Jl-RZ1" secondAttribute="top" constant="20" id="Ruj-pi-wI8"/>
+                                    <constraint firstItem="18I-er-Pkx" firstAttribute="leading" secondItem="laS-Jl-RZ1" secondAttribute="leading" id="Wq2-07-0ui"/>
+                                    <constraint firstItem="feg-cf-Ij9" firstAttribute="top" secondItem="laS-Jl-RZ1" secondAttribute="top" constant="20" id="Y5Y-iB-TZC"/>
+                                    <constraint firstAttribute="bottom" secondItem="18I-er-Pkx" secondAttribute="bottom" id="aSe-0e-xu5"/>
+                                    <constraint firstItem="XBL-9y-6lG" firstAttribute="leading" secondItem="feg-cf-Ij9" secondAttribute="trailing" constant="16" id="bEN-0f-sSn"/>
+                                    <constraint firstAttribute="trailing" secondItem="yMN-OJ-Guu" secondAttribute="trailing" constant="20" id="gyG-ve-5P0"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="modeView" destination="18I-er-Pkx" id="KCt-Lo-gJv"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L7h-C1-yGF" firstAttribute="top" secondItem="Qil-d9-T6G" secondAttribute="bottom" id="5dk-kY-ued"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="top" secondItem="Qil-d9-T6G" secondAttribute="bottom" id="5xa-Xx-bnd"/>
+                            <constraint firstItem="55p-aX-u3t" firstAttribute="top" secondItem="laS-Jl-RZ1" secondAttribute="bottom" id="SOt-J4-xkB"/>
+                            <constraint firstAttribute="trailing" secondItem="laS-Jl-RZ1" secondAttribute="trailing" id="SoG-B9-2IX"/>
+                            <constraint firstItem="55p-aX-u3t" firstAttribute="top" secondItem="L7h-C1-yGF" secondAttribute="bottom" id="ZfR-7t-lkD"/>
+                            <constraint firstItem="laS-Jl-RZ1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uSm-Dc-FWi"/>
+                            <constraint firstItem="L7h-C1-yGF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xbJ-bE-O7V"/>
+                            <constraint firstAttribute="trailing" secondItem="L7h-C1-yGF" secondAttribute="trailing" id="z1t-Um-1Xt"/>
+                        </constraints>
                         <connections>
                             <outlet property="overlayView" destination="laS-Jl-RZ1" id="Hih-Qg-RM0"/>
                             <outlet property="previewView" destination="L7h-C1-yGF" id="M8x-TL-Dtw"/>
@@ -116,9 +158,4 @@
         <image name="max_button" width="46" height="46"/>
         <image name="min_button" width="46" height="46"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

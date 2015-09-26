@@ -301,7 +301,10 @@ NSString *const THMovieCreatedNotification = @"THMovieCreated";
         }
 
         if ([videoConnection isVideoStabilizationSupported]) {
-            videoConnection.enablesVideoStabilizationWhenAvailable = YES;
+            // videoConnection.enablesVideoStabilizationWhenAvailable = YES;
+            // ^^ the above property has been deprecated. Use the following for the equivalent
+            // effect on iOS 8+.
+            videoConnection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationModeStandard;
         }
 
         AVCaptureDevice *device = [self activeCamera];

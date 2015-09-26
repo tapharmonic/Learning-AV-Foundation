@@ -190,7 +190,7 @@ GLint uniforms[NUM_UNIFORMS];
 - (void)update {
     CGRect bounds = self.view.bounds;
 
-    GLfloat aspect = fabsf(CGRectGetWidth(bounds) / CGRectGetHeight(bounds));
+    GLfloat aspect = fabs(CGRectGetWidth(bounds) / CGRectGetHeight(bounds));
     GLKMatrix4 projectionMatrix =
     GLKMatrix4MakePerspective(GLKMathDegreesToRadians(50.0f),
                               aspect, 0.1f, 100.0f);
