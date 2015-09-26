@@ -53,12 +53,12 @@ static inline CGPoint THGetOriginForTime(CMTime time) {
 
 static inline CMTimeRange THGetTimeRangeForWidth(CGFloat width, CGFloat scaleFactor) {
 	CGFloat duration = width / scaleFactor;
-	return CMTimeRangeMake(kCMTimeZero, CMTimeMakeWithSeconds(duration, scaleFactor));
+	return CMTimeRangeMake(kCMTimeZero, CMTimeMakeWithSeconds(duration, NSEC_PER_SEC));
 }
 
 static inline CMTime THGetTimeForOrigin(CGFloat origin, CGFloat scaleFactor) {
 	CGFloat seconds = origin / scaleFactor;
-	return CMTimeMakeWithSeconds(seconds, scaleFactor);
+	return CMTimeMakeWithSeconds(seconds, NSEC_PER_SEC);
 }
 
 static inline CGFloat THDegreesToRadians(CGFloat degrees) {
