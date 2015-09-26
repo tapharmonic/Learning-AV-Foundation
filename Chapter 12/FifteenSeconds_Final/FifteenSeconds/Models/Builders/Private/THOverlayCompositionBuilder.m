@@ -226,10 +226,10 @@
             instructions.compositionInstruction = vci;
 
             instructions.fromLayerInstruction =                             // 3
-                vci.layerInstructions[1 - layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[1 - layerInstructionIndex];
 
             instructions.toLayerInstruction =
-                vci.layerInstructions[layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[layerInstructionIndex];
 
             [transitionInstructions addObject:instructions];
 
