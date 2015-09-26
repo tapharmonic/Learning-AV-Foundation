@@ -160,25 +160,6 @@
         
     }
 
-//    AVVideoComposition *videoComposition = [AVVideoComposition videoCompositionWithPropertiesOfAsset:self.composition];
-//    NSLog(@"Render scale %f", videoComposition.renderScale);
-//    NSLog(@"Render size %@", NSStringFromCGSize(videoComposition.renderSize));
-//    CMTimeShow(videoComposition.frameDuration);
-//
-//
-//    for (AVVideoCompositionInstruction *vci in videoComposition.instructions) {
-//        CMTimeRangeShow(vci.timeRange);
-//    }
-//
-//    printf("\n");
-//
-//    for (int i = 0; i < videoCount; i++) {
-//        CMTimeRangeShow([self.passThroughTimeRanges[i] CMTimeRangeValue]);
-//        if (i < videoCount - 1) {
-//            CMTimeRangeShow([self.transitionTimeRanges[i] CMTimeRangeValue]);
-//        }
-//    }
-
 }
 
 - (AVMutableVideoComposition *)buildVideoCompositionAndInstructions {
@@ -339,10 +320,10 @@ videoComposition.renderScale = 1.0f;
 			instructions.compositionInstruction = vci;
 
 			instructions.fromLayerInstruction =
-                vci.layerInstructions[1 - layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[1 - layerInstructionIndex];
 
             instructions.toLayerInstruction =
-                vci.layerInstructions[layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[layerInstructionIndex];
 
 			[transitionInstructions addObject:instructions];
 

@@ -104,8 +104,6 @@
         cursorTime = CMTimeSubtract(cursorTime, transitionDuration);
     }
 
-    NSLog(@"Track A: %@", compositionTrackA.segments);
-
     // Add voice overs                                                      // 5
     [self addCompositionTrackOfType:AVMediaTypeAudio
                      withMediaItems:self.timeline.voiceOvers];
@@ -208,10 +206,10 @@
             instructions.compositionInstruction = vci;
 
             instructions.fromLayerInstruction =                             // 3
-                vci.layerInstructions[1 - layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[1 - layerInstructionIndex];
 
             instructions.toLayerInstruction =
-                vci.layerInstructions[layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[layerInstructionIndex];
 
             [transitionInstructions addObject:instructions];
 

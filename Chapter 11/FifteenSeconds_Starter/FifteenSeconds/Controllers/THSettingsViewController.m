@@ -37,72 +37,72 @@ typedef NS_ENUM(NSInteger, THSettingsSection) {
 };
 
 static const NSInteger kFirstRow = 0;
-static const CGFloat kHeaderHeight = 38.0f;
+static const CGFloat kHeaderHeight = 32.0f;
 
 @implementation THSettingsViewController
 
 - (void)viewDidLoad {
-	[super viewDidLoad];
+    [super viewDidLoad];
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.separatorInset = UIEdgeInsetsZero;
     self.tableView.backgroundColor = [UIColor whiteColor];
 
     self.transitionsSwitch.on = [THAppSettings sharedSettings].transitionsEnabled;
-	self.volumeFadesSwitch.on = [THAppSettings sharedSettings].volumeFadesEnabled;
-	self.volumeDuckingSwitch.on = [THAppSettings sharedSettings].volumeDuckingEnabled;
-	self.showTitlesSwitch.on = [THAppSettings sharedSettings].titlesEnabled;
+    self.volumeFadesSwitch.on = [THAppSettings sharedSettings].volumeFadesEnabled;
+    self.volumeDuckingSwitch.on = [THAppSettings sharedSettings].volumeDuckingEnabled;
+    self.showTitlesSwitch.on = [THAppSettings sharedSettings].titlesEnabled;
 
 }
 
 - (CGSize)contentSizeForViewInPopover {
-	return CGSizeMake(300, 380);
+    return CGSizeMake(300, 380);
 }
 
 - (IBAction)toggleTransitionsEnabledState:(UISwitch *)sender {
-	[THAppSettings sharedSettings].transitionsEnabled = sender.on;
-	[[NSNotificationCenter defaultCenter] postNotificationName:THTransitionsEnabledStateChangeNotification
-														object:@(sender.on)];
+    [THAppSettings sharedSettings].transitionsEnabled = sender.on;
+    [[NSNotificationCenter defaultCenter] postNotificationName:THTransitionsEnabledStateChangeNotification
+                                                        object:@(sender.on)];
 }
 
 - (IBAction)toggleVolumeFadesEnabledState:(UISwitch *)sender {
-	[THAppSettings sharedSettings].volumeFadesEnabled = sender.on;
-	[[NSNotificationCenter defaultCenter] postNotificationName:THVolumeFadesEnabledStateChangeNotification
-														object:@(sender.on)];
+    [THAppSettings sharedSettings].volumeFadesEnabled = sender.on;
+    [[NSNotificationCenter defaultCenter] postNotificationName:THVolumeFadesEnabledStateChangeNotification
+                                                        object:@(sender.on)];
 }
 
 - (IBAction)toggleVolumeDuckingEnabledState:(UISwitch *)sender {
-	[THAppSettings sharedSettings].volumeDuckingEnabled = sender.on;
-	[[NSNotificationCenter defaultCenter] postNotificationName:THVolumeDuckingEnabledStateChangeNotification
-														object:@(sender.on)];
+    [THAppSettings sharedSettings].volumeDuckingEnabled = sender.on;
+    [[NSNotificationCenter defaultCenter] postNotificationName:THVolumeDuckingEnabledStateChangeNotification
+                                                        object:@(sender.on)];
 }
 
 - (IBAction)toggleShowTitlesEnableState:(UISwitch *)sender {
-	[THAppSettings sharedSettings].titlesEnabled = sender.on;
-	[[NSNotificationCenter defaultCenter] postNotificationName:THShowTitlesEnabledStateChangeNotification
-														object:@(sender.on)];
+    [THAppSettings sharedSettings].titlesEnabled = sender.on;
+    [[NSNotificationCenter defaultCenter] postNotificationName:THShowTitlesEnabledStateChangeNotification
+                                                        object:@(sender.on)];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.section == THSettingsSectionShare && indexPath.row == kFirstRow) {
-		[[NSNotificationCenter defaultCenter] postNotificationName:THExportRequestedNotification object:nil];
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-		[self.popover dismissPopoverAnimated:YES];
-	} else if (indexPath.section == THSettingsSectionProject && indexPath.row == kFirstRow) {
-		[[NSNotificationCenter defaultCenter] postNotificationName:THLoadDefaultCompositionNotification object:nil];
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-		[self.popover dismissPopoverAnimated:YES];
-	}
+    if (indexPath.section == THSettingsSectionShare && indexPath.row == kFirstRow) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:THExportRequestedNotification object:nil];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.popover dismissPopoverAnimated:YES];
+    } else if (indexPath.section == THSettingsSectionProject && indexPath.row == kFirstRow) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:THLoadDefaultCompositionNotification object:nil];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.popover dismissPopoverAnimated:YES];
+    }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-	THTableSectionHeaderView *view = [[THTableSectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frameWidth, kHeaderHeight)];
-	view.title = [self tableView:tableView titleForHeaderInSection:section];
-	return view;
+    THTableSectionHeaderView *view = [[THTableSectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frameWidth, kHeaderHeight)];
+    view.title = [self tableView:tableView titleForHeaderInSection:section];
+    return view;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	return kHeaderHeight;
+    return kHeaderHeight;
 }
 
 @end

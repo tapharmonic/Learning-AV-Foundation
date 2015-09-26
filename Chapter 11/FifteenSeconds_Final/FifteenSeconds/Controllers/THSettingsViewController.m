@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, THSettingsSection) {
 };
 
 static const NSInteger kFirstRow = 0;
-static const CGFloat kHeaderHeight = 38.0f;
+static const CGFloat kHeaderHeight = 32.0f;
 
 @implementation THSettingsViewController
 

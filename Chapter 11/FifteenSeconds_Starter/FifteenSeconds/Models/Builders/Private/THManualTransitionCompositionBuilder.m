@@ -339,10 +339,10 @@ videoComposition.renderScale = 1.0f;
 			instructions.compositionInstruction = vci;
 
 			instructions.fromLayerInstruction =
-                vci.layerInstructions[1 - layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[1 - layerInstructionIndex];
 
             instructions.toLayerInstruction =
-                vci.layerInstructions[layerInstructionIndex];
+                (AVMutableVideoCompositionLayerInstruction *)vci.layerInstructions[layerInstructionIndex];
 
 			[transitionInstructions addObject:instructions];
 
