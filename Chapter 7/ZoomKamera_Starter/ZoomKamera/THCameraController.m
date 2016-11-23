@@ -26,7 +26,7 @@
 #import "THCameraController.h"
 #import <AVFoundation/AVFoundation.h>
 
-const CGFloat THZoomTime = 1.0f;
+const CGFloat THZoomRate = 1.0f;
 
 // KVO Contexts
 static const NSString *THRampingVideoZoomContext;
