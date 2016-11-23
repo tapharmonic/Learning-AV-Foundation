@@ -26,7 +26,7 @@
 #import "THCameraController.h"
 #import <AVFoundation/AVFoundation.h>
 
-const CGFloat THZoomTime = 1.0f;
+const CGFloat THZoomRate = 1.0f;
 
 // KVO Contexts
 static const NSString *THRampingVideoZoomContext;
@@ -107,7 +107,7 @@ static const NSString *THRampingVideoZoomFactorContext;
 	NSError *error;
 	if ([self.activeCamera lockForConfiguration:&error]) {
 		[self.activeCamera rampToVideoZoomFactor:zoomFactor                 // 2
-                                        withRate:THZoomTime];
+                                        withRate:THZoomRate];
 		[self.activeCamera unlockForConfiguration];
 	} else {
 		[self.delegate deviceConfigurationFailedWithError:error];
