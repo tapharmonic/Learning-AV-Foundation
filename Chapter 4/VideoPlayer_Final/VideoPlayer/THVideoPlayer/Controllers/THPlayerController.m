@@ -238,6 +238,7 @@ static const NSString *PlayerItemStatusContext;
     self.lastPlaybackRate = self.player.rate;
     [self.player pause];
     [self.player removeTimeObserver:self.timeObserver];
+    self.timeObserver = nil;
 }
 
 - (void)scrubbedToTime:(NSTimeInterval)time {                               // 2
@@ -324,5 +325,6 @@ static const NSString *PlayerItemStatusContext;
         self.itemEndObserver = nil;
     }
 }
+
 
 @end
