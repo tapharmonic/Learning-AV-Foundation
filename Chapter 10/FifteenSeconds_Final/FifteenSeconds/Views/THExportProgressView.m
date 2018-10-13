@@ -29,6 +29,7 @@
 @implementation THExportProgressView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
 }
 
 @end

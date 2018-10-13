@@ -32,6 +32,7 @@
 @implementation THOverlayView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
 	self.statusView.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
 }

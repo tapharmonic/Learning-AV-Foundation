@@ -28,7 +28,7 @@
 #import "THPlayerViewController.h"
 #import "UIAlertView+THAdditions.h"
 
-#define YOUTUBE_URL @"http://www.youtube.com/watch?v=6dNryy5elc8"
+#define YOUTUBE_URL @"https://www.youtube.com/watch?v=3tUCuMSPQwE"
 
 #define LOCAL_SEGUE        @"localSegue"
 #define STREAMING_SEGUE @"streamingSegue"

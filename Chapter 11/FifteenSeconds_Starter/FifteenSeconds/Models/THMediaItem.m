@@ -75,7 +75,7 @@ static NSString *const AVAssetCommonMetadataKey = @"commonMetadata";
         // Production code should be more robust.  Specifically, should capture error in failure case.
         AVKeyValueStatus tracksStatus = [self.asset statusOfValueForKey:AVAssetTracksKey error:nil];
         AVKeyValueStatus durationStatus = [self.asset statusOfValueForKey:AVAssetDurationKey error:nil];
-        _prepared = (tracksStatus == AVKeyValueStatusLoaded) && (durationStatus == AVKeyValueStatusLoaded);
+        self->_prepared = (tracksStatus == AVKeyValueStatusLoaded) && (durationStatus == AVKeyValueStatusLoaded);
         if (self.prepared) {
             self.timeRange = CMTimeRangeMake(kCMTimeZero, self.asset.duration);
             [self performPostPrepareActionsWithCompletionBlock:completionBlock];

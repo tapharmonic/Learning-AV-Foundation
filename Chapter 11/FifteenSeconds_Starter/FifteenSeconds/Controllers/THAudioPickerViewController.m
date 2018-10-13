@@ -44,6 +44,7 @@ static NSString * const THAudioItemCellID = @"THAudioItemCell";
 @implementation THAudioPickerViewController
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.allAudioItems = @[self.musicItems, self.voiceOverItems];
 }
 

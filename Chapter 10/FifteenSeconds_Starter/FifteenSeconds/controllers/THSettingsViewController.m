@@ -53,8 +53,8 @@
 
 }
 
-- (CGSize)contentSizeForViewInPopover {
-	return CGSizeMake(300, 300);
+- (CGSize)preferredContentSize {
+    return CGSizeMake(300, 300);
 }
 
 - (IBAction)toggleTransitionsEnabledState:(UISwitch *)sender {

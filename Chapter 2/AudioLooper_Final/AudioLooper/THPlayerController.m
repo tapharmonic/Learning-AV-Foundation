@@ -126,6 +126,11 @@
 
 #pragma mark - Interruption Handlers
 
+//
+// The following two methods have been deprecated.
+// Replace with AVAudioSession notification handlers in your production code.
+//
+
 - (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player {
     [self stop];
     if (self.delegate) {

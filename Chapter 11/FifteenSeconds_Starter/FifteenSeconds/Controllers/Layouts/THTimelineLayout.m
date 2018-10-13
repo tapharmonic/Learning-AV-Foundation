@@ -226,6 +226,7 @@ typedef enum {
 #pragma mark - Set up Gesture Recognizers
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
 	UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
 	UILongPressGestureRecognizer *longPressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
 	longPressRecognizer.minimumPressDuration = 0.5f;

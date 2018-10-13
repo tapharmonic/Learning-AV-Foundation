@@ -32,6 +32,7 @@
 @implementation THOverlayView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
 	[self.modeView addTarget:self action:@selector(modeChanged:) forControlEvents:UIControlEventValueChanged];
 }

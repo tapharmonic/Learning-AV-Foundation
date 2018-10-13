@@ -55,7 +55,7 @@ static const CGFloat kHeaderHeight = 32.0f;
 
 }
 
-- (CGSize)contentSizeForViewInPopover {
+- (CGSize)preferredContentSize {
     return CGSizeMake(300, 380);
 }
 

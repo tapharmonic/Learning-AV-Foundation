@@ -36,6 +36,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
 	CGRect rect = self.bounds;
 	rect.origin.x = rect.origin.x;
 	UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];

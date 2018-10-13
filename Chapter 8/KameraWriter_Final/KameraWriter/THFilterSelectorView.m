@@ -38,6 +38,7 @@
 @implementation THFilterSelectorView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self setupLabels];
     [self setupActions];
 }

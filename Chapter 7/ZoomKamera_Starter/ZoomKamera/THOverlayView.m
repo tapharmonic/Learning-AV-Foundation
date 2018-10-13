@@ -28,6 +28,8 @@
 @implementation THOverlayView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+    
     self.backgroundColor = [UIColor clearColor];
 
 	UISwipeGestureRecognizer *rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(switchMode:)];

@@ -55,8 +55,8 @@ static const CGFloat kHeaderHeight = 32.0f;
 
 }
 
-- (CGSize)contentSizeForViewInPopover {
-	return CGSizeMake(300, 380);
+- (CGSize)preferredContentSize {
+    return CGSizeMake(300, 380);
 }
 
 - (IBAction)toggleTransitionsEnabledState:(UISwitch *)sender {

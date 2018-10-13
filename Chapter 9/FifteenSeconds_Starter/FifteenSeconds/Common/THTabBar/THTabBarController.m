@@ -55,6 +55,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self performSegueWithIdentifier:@"THSetVideoPickerViewController" sender:self];
     [self performSegueWithIdentifier:@"THSetAudioPickerViewController" sender:self];
 }
@@ -174,13 +175,6 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(tabBarController:didSelectViewController:)]) {
         [self.delegate tabBarController:self didSelectViewController:self.selectedViewController];
     }
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    if (self.selectedViewController) {
-        return [self.selectedViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
-    }
-    return YES;
 }
 
 @end

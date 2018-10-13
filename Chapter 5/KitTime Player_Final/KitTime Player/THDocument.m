@@ -27,7 +27,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 #import "THChapter.h"
-#import <QTKit/QTKit.h>
+#import <QTKit/QTMovieModernizer.h>
 #import "NSFileManager+THAdditions.h"
 #import "THWindow.h"
 

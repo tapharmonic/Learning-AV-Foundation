@@ -145,6 +145,7 @@
     return NO;
 }
 
+// This method is now deprecated. You should use AVAudioSession notification handlers instead.
 - (void)audioRecorderBeginInterruption:(AVAudioRecorder *)recorder {
     if (self.delegate) {
         [self.delegate interruptionBegan];

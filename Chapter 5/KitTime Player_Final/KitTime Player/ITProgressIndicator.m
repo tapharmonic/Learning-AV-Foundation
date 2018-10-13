@@ -116,7 +116,7 @@
                 lineInstance = [lineInstance rotatedBezierPath:((2 * M_PI) / self.numberOfLines * lineNumber) + M_PI
                                                     aboutPoint:NSMakePoint(NSWidth(r) / 2, NSHeight(r) / 2)];
                 
-                if (!_isIndeterminate) [[self.color colorWithAlphaComponent:1.0 - (1.0 / self.numberOfLines * lineNumber)] set];
+                if (!self->_isIndeterminate) [[self.color colorWithAlphaComponent:1.0 - (1.0 / self.numberOfLines * lineNumber)] set];
                 
                 [lineInstance fill];
             };

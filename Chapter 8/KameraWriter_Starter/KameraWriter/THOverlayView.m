@@ -32,6 +32,7 @@
 @implementation THOverlayView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
 }
 

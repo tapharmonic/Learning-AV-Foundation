@@ -266,7 +266,11 @@ NSString *const THThumbnailCreatedNotification = @"THThumbnailCreated";
 		}
 
 		if ([videoConnection isVideoStabilizationSupported]) {
-			videoConnection.enablesVideoStabilizationWhenAvailable = YES;
+            
+            videoConnection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationModeAuto;
+            
+            // Deprecated approach below
+			// videoConnection.enablesVideoStabilizationWhenAvailable = YES;
 		}
 
         AVCaptureDevice *device = [self activeCamera];

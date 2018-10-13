@@ -445,11 +445,10 @@ static const NSString *THCameraAdjustingExposureContext;
 
 		if ([videoConnection isVideoStabilizationSupported]) {              // 4
             
-            if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
-                videoConnection.enablesVideoStabilizationWhenAvailable = YES;
-            } else {
-                videoConnection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationModeAuto;
-            }
+            videoConnection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationModeAuto;
+            
+            // Deprecated approach below
+            // videoConnection.enablesVideoStabilizationWhenAvailable = YES;
 		}
 
         AVCaptureDevice *device = [self activeCamera];

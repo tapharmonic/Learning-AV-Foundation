@@ -52,8 +52,8 @@
 	self.showTitlesSwitch.on = [THAppSettings sharedSettings].titlesEnabled;
 }
 
-- (CGSize)contentSizeForViewInPopover {
-	return CGSizeMake(300, 200);
+- (CGSize)preferredContentSize {
+    return CGSizeMake(300, 200);
 }
 
 - (IBAction)toggleTransitionsEnabledState:(UISwitch *)sender {

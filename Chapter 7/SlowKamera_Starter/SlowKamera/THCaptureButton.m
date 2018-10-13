@@ -58,6 +58,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     _captureButtonMode = THCaptureButtonModeVideo;
     [self setupView];
 }

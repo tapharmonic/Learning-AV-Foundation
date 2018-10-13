@@ -37,6 +37,7 @@
 @implementation THCameraView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor blackColor];
 }
 

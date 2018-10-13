@@ -64,6 +64,7 @@ static const CGFloat FONT_SIZE      = 17.0f;
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self setupView];
 }
 

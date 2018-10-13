@@ -34,6 +34,8 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+    
 	self.layer.cornerRadius = 4.0f;
 	self.layer.borderWidth = 2.0f;
 	self.layer.borderColor = [UIColor colorWithWhite:1.0f alpha:0.25].CGColor;
